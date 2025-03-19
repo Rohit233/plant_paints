@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Paintbrush, Twitter } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Paintbrush className="h-6 w-6" />
+              
               <span className="text-xl font-bold text-white">PlantPaints</span>
             </div>
             <p className="text-sm">Transform your space with our premium quality paints and expert color solutions.</p>
@@ -41,10 +42,10 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Contact Info</h3>
             <ul className="space-y-2">
-              <li className="text-sm">123 Paint Street</li>
-              <li className="text-sm">Color City, CC 12345</li>
+              <li className="text-sm">Plot No53, Industrial area</li>
+              <li className="text-sm">chikalthana MIDC Cha.Sambhajinagar.</li>
               <li className="text-sm">Phone: (123) 456-7890</li>
-              <li className="text-sm">Email: info@colorcraft.com</li>
+              <li className="text-sm">care@planetpaints.in</li>
             </ul>
           </div>
           <div>
