@@ -1,7 +1,6 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
 
 const sections = [
     {
@@ -90,17 +89,11 @@ export default function HeroParallax() {
   return (
     <div className="relative w-full overflow-hidden">
       {sections.map((section, index) => {
-        const ref = useRef(null);
-        const { scrollYProgress } = useScroll({
-          target: ref,
-          offset: ["start end", "end start"],
-        });
-        const y = useTransform(scrollYProgress, [0, 1], ["-30%", "30%"]);
+        
 
         return (
           <section
             key={index}
-            ref={ref}
             className={`relative h-screen flex items-center justify-center ${section.bgColor}`}
           >
             <div className="relative flex w-full h-full max-w-6xl mx-auto px-8 lg:px-16">
@@ -113,7 +106,7 @@ export default function HeroParallax() {
                 </button>
               </div>
               <div className="w-1/2 relative h-full overflow-hidden">
-                <motion.div style={{ y }} className="absolute w-full h-full">
+                <motion.div style={{ }} className="absolute w-full h-full">
                   <Image
                     src={section.image}
                     alt={section.title}

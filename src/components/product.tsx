@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const product = [
   { title: "MARVAL Luxury Emulsion", image: "/assets/house/1.jpg" },

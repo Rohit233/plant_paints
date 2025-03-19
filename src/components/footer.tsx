@@ -1,6 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Paintbrush, Twitter } from "lucide-react"
-import Image from "next/image"
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 
 export default function Footer() {
   return (
