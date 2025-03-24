@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 
 const product = [
   { title: "MARVAL Luxury Emulsion", image: "/assets/house/1.jpg" },
@@ -32,9 +32,9 @@ export default function Product() {
           {product.map((product, index) => (
             <Card 
               key={index} 
-              className="hover:shadow-2xl transition-shadow transform hover:scale-105 overflow-hidden rounded-xl p-4 bg-white border border-gray-200"
+              className="hover:shadow-2xl transition-shadow transform hover:scale-105 overflow-hidden rounded-xl bg-white border border-gray-200"
             >
-              <div className="relative h-64 w-full rounded-t-xl overflow-hidden">
+              <div className="relative h-80 w-full rounded-t-xl overflow-hidden">
                 <Image 
                   src={product.image} 
                   alt={product.title} 
@@ -46,9 +46,6 @@ export default function Product() {
               <CardHeader>
                 <CardTitle className="text-lg font-semibold text-gray-800">{product.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <button className="text-primary font-medium hover:underline">View Product →</button>
-              </CardContent>
             </Card>
           ))}
         </div>

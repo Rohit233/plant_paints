@@ -2,7 +2,7 @@ import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 
-export default function About() {
+export default function Abouts() {
   return (
     <section id="about" className="py-24">
       <div className="container">

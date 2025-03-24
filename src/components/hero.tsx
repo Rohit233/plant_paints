@@ -61,9 +61,9 @@ export default function Hero() {
                 className="w-full object-cover h-[600px]"
               />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <div className="text-center text-white space-y-4">
-                  <h1 className="text-4xl md:text-6xl font-bold">{slide.title}</h1>
-                  <p className="text-lg md:text-xl">{slide.description}</p>
+                <div className="text-center text-white space-y-4 px-4 md:px-8"> {/* Added padding */}
+                  <h1 className="text-3xl md:text-5xl font-bold">{slide.title}</h1> {/* Adjusted sizes */}
+                  <p className="text-md md:text-lg">{slide.description}</p> {/* Adjusted sizes */}
                   <Button size="lg" className="mt-4">
                     Explore Now
                   </Button>
@@ -92,4 +92,3 @@ export default function Hero() {
     </div>
   )
 }
-

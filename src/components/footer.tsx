@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import Link from "next/link";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,7 +8,6 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              
               <span className="text-xl font-bold text-white">PlantPaints</span>
             </div>
             <p className="text-sm">Transform your space with our premium quality paints and expert color solutions.</p>
@@ -17,22 +16,17 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#products" className="text-sm hover:text-white transition-colors">
+                <Link href="/products" className="text-sm hover:text-white transition-colors">
                   Products
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-sm hover:text-white transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="#about" className="text-sm hover:text-white transition-colors">
+                <Link href="/about" className="text-sm hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-sm hover:text-white transition-colors">
+                <Link href="/contact" className="text-sm hover:text-white transition-colors">
                   Contact
                 </Link>
               </li>
@@ -42,7 +36,7 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4">Contact Info</h3>
             <ul className="space-y-2">
               <li className="text-sm">Plot No53, Industrial area</li>
-              <li className="text-sm">chikalthana MIDC Cha.Sambhajinagar.</li>
+              <li className="text-sm">Chikalthana MIDC Cha.Sambhajinagar.</li>
               <li className="text-sm">Phone: (123) 456-7890</li>
               <li className="text-sm">care@planetpaints.in</li>
             </ul>
@@ -56,11 +50,8 @@ export default function Footer() {
               <Link href="#" className="hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="hover:text-white transition-colors">
+              <Link href="https://www.instagram.com/planetpaints50?utm_source=qr&igsh=aGlhbXZudzk1aGQz" target="_blank" className="hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
               </Link>
             </div>
           </div>
@@ -72,6 +63,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
