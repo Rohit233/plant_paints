@@ -25,7 +25,7 @@ export default function Navbar() {
   const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white shadow-lg">
+    <header className="sticky top-0 z-50 w-full border-b bg-white shadow-lg ">
       <div className="container flex h-16 items-center justify-center lg:justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/assets/logo.png" alt="Logo" width={230} height={40} />
