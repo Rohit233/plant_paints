@@ -9,15 +9,15 @@ import Image from "next/image";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const products = [
-  { title: "MARVAL Luxury Emulsion", image: "/assets/1.png", link: "/products/" },
-  { title: "SPARX Acrylic Emulsion", image: "/assets/2.png", link: "/products/" },
-  { title: "TRENCH COAT Luxury Emulsion", image: "/assets/3.png", link: "/products/" },
-  { title: "VITARA Premium Emulsion", image: "/assets/4.png", link: "/products/" },
-  { title: "EXPERT Acrylic Water-Based Primer", image: "/assets/5.png", link: "/products/" },
-  { title: "ELITE Acrylic Washable Distemper", image: "/assets/7.png", link: "/products/" },
-  { title: "Planet Paints WALL PUTTY", image: "/assets/6.png", link: "/products/" },
-  { title: "ACRYLIC WALL TEXTURE", image: "/assets/13.png", link: "/products/" },
-  { title: "Orchid Paints WALL PUTTY", image: "/assets/15.png", link: "/products/" },
+  { title: "Marval luxury emulsion", image: "/assets/1.png", link: "/products/" },
+  { title: "Sparx acrylic emulsion", image: "/assets/2.png", link: "/products/" },
+  { title: "Trench coat luxury emulsion", image: "/assets/3.png", link: "/products/" },
+  { title: "Vitara premium emulsion", image: "/assets/4.png", link: "/products/" },
+  { title: "Expert acrylic water-based primer", image: "/assets/5.png", link: "/products/" },
+  { title: "Elite acrylic washable distemper", image: "/assets/7.png", link: "/products/" },
+  { title: "Planet paints wall putty", image: "/assets/6.png", link: "/products/" },
+  { title: "Acrylic wall texture", image: "/assets/13.png", link: "/products/" },
+  { title: "Orchid paints wall putty", image: "/assets/15.png", link: "/products/" },
 ];
 
 export default function Navbar() {
@@ -25,23 +25,24 @@ export default function Navbar() {
   const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white shadow-lg ">
-      <div className="container flex h-16 items-center justify-center lg:justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <Image src="/assets/logo.png" alt="Logo" width={230} height={40} />
+    <header className="sticky top-0 z-50 w-full border bg-white shadow-lg">
+      <div className="flex h-16 items-center justify-between px-2 w-full">
+        {/* Logo */}
+        <Link href="/">
+          <Image src="/assets/logo.png" alt="Logo" width={300} height={60} className="ml-[-62px]" />
         </Link>
 
         {/* Mobile Menu */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="lg:hidden absolute right-0">
-              <Menu className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="lg:hidden ml-2" >
+              <Menu className="!h-8 !w-6" strokeWidth={3} />
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
             <VisuallyHidden asChild>
-              <SheetTitle>Mobile Navigation Menu</SheetTitle>
-            </VisuallyHidden>
+              <SheetTitle >Mobile Navigation Menu</SheetTitle>
+            </VisuallyHidden >
             <nav className="flex flex-col gap-4">
               <button
                 className="flex w-min items-center text-lg font-medium"
@@ -54,8 +55,8 @@ export default function Navbar() {
               {isMobileProductsOpen && (
                 <div className="ml-4 flex flex-col gap-2">
                   {products.map((product, index) => (
-                    <Link key={index} href={product.link} className="text-sm font-medium text-black hover:text-primary flex items-center">
-                      <span className="mr-2 text-primary">●</span> {product.title}
+                    <Link key={index} href={product.link} className="text-sm font-medium text-black hover:text-primary">
+                      {product.title}
                     </Link>
                   ))}
                 </div>

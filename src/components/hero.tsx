@@ -12,27 +12,27 @@ const slides = [
   {
     title: "Transform Your Space with Premium Color",
     description: "Our designer palette brings luxury and style to any room",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&h=600&fit=crop",
+    image: "/assets/42.jpg",
   },
   {
     title: "Eco-Friendly & Low VOC Formulas",
     description: "Breathe easy with our sustainable, non-toxic paint collection",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200&h=600&fit=crop",
+    image: "/assets/41.webp",
   },
   {
     title: "Professional Results, Every Time",
     description: "Superior coverage and durability trusted by contractors nationwide",
-    image: "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?q=80&w=1200&h=600&fit=crop",
+    image: "/assets/43.jpg",
   },
   {
     title: "Find Your Perfect Shade",
     description: "Browse over 2,000 curated colors or create your custom match",
-    image: "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?q=80&w=1200&h=600&fit=crop", 
+    image: "/assets/44.webp", 
   },
   {
     title: "The Ultimate Finish for Every Project",
     description: "From matte to high-gloss, interior to exterior, we've got you covered",
-    image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1200&h=600&fit=crop",
+    image: "/assets/45.jpeg",
   },
 ]
 

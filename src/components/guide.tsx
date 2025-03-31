@@ -10,7 +10,7 @@ const colors = [
 
 const Guide: React.FC = () => {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [selectedRoom, setSelectedRoom] = useState<string>("28.jpg");
+  const [selectedRoom, setSelectedRoom] = useState<string>("28.avif");
   const [selectedText, setSelectedText] = useState<string>("Floor");
 
   const rooms = [
@@ -18,14 +18,14 @@ const Guide: React.FC = () => {
     { img: "23.png", text: "Kids Room" },
     { img: "24.webp", text: "Kitchen" },
     { img: "25.avif", text: "Bed Room" },
-    { img: "28.jpg", text: "Floor" }
+    { img: "28.avif", text: "Floor" }
   ];
 
   return (
     <div className="flex flex-col md:flex-row px-6 md:px-16 lg:px-10 py-8 md:py-12 bg-gray-100 gap-8 md:gap-16 justify-center items-center">
       {/* Left Section */}
       <div className="w-full md:w-1/2 space-y-6 md:space-y-8 pr-0 md:pr-8 lg:pr-16 text-center md:text-left">
-        <button className="text-lg bg-gray-300 text-black px-4 py-3 rounded-lg">Colour Guide</button>
+        <button className="text-lg bg-gray-200 text-black px-4 py-3 rounded-lg">Colour Guide</button>
         <h2 className="text-2xl md:text-3xl font-bold leading-relaxed">
           Your Home&apos;s <span className="text-3xl md:text-4xl">Dream Look</span> <br />
           <span className="text-3xl md:text-4xl">Starts With A Single Click</span>

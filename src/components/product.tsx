@@ -12,10 +12,12 @@ const product = [
   { title: "ACRYLIC WALL TEXTURE", image: "/assets/house/18.png"},
   { title: "Orchid Paints WALL PUTTY", image: "/assets/house/9.jpg"},
   { title: "GREEK", image: "/assets/house/10.jpg"},
-  { title: "TREO", image: "/assets/house/11.jpeg"},
+  { title: "TREO", image: "/assets/house/11.webp"},
   { title: "ASTIR", image: "/assets/house/12.jpg"},
   { title: "INSTA", image: "/assets/house/13.webp"},
   { title: "SMART", image: "/assets/house/14.jpg"},
+  { title: "SPLASH", image: "/assets/house/51.webp"},
+  { title: "STROKE", image: "/assets/house/52.jpg"},
 ];
 
 export default function Product() {

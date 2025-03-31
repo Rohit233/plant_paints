@@ -1,10 +1,11 @@
 "use client";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 const sections = [
   {
-    title: " MARVAL Luxury Emulsion",
+    title: "MARVAL Luxury Emulsion",
     subtitle: "Extra Sheen Finish for Lasting Elegance",
     description:
       "A premium paint with an extra sheen finish for an elegant look. It offers long-lasting protection with stain resistance and anti-dust technology. The washable formula ensures easy maintenance and vibrant walls. Elevate your space with luxury and durability.",
@@ -21,13 +22,16 @@ const sections = [
     bgColor: "bg-violet-300",
     textColor: "text-black",
   },
+];
+
+const moreSections = [
   {
     title: "TRENCH COAT Luxury Emulsion",
     subtitle: "Extra Sheen Finish",
     description:
       "A premium extra sheen paint for a rich, elegant finish. It offers long-lasting protection with stain resistance and superior flexibility. The washable formula ensures easy maintenance and a fresh look. Elastomeric properties provide crack resistance for durable walls. Experience luxury and lasting beauty with TRENCH COAT.",
     image: "/assets/3.png",
-    bgColor: "bg-blue-300 ",
+    bgColor: "bg-blue-300",
     textColor: "text-black",
   },
   {
@@ -84,19 +88,21 @@ const sections = [
     bgColor: "bg-gray-200",
     textColor: "text-black",
   },
+
 ];
 
-
 export default function HeroParallax() {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <div className="relative w-full overflow-hidden">
+      {/* First Section */}
       {sections.map((section, index) => (
         <section
           key={index}
           className={`relative flex flex-col md:flex-row items-center justify-center ${section.bgColor} py-10 md:py-12 pb-5 md:pb-10`}
         >
           <div className="relative flex flex-col md:flex-row w-full max-w-6xl mx-auto px-4 md:px-8">
-            {/* Text Content (Left-Aligned) */}
             <div
               className={`flex flex-col items-start text-left justify-center w-full md:w-1/2 ${section.textColor} px-2 sm:px-4 md:px-8 mt-8 md:mt-0`}
             >
@@ -110,29 +116,13 @@ export default function HeroParallax() {
                 {section.description}
               </p>
             </div>
-
-            {/* Desktop Image (Hidden on Mobile) */}
-            <div className="hidden md:flex w-full md:w-1/2 relative mt-6 md:mt-0 flex justify-center">
-              <motion.div className="relative w-full h-[400px] md:h-[600px] lg:h-[800px]">
+            <div className="flex w-full md:w-1/2 justify-center mt-6 md:mt-0">
+              <motion.div className="relative w-full h-[600px] sm:h-[600px] md:h-[600px] lg:h-[800px]">
                 <Image
                   src={section.image}
                   alt={section.title}
-                  width={600}
-                  height={800}
-                  className="w-full h-full object-cover rounded-lg"
-                  priority
-                />
-              </motion.div>
-            </div>
-
-            {/* Mobile Image (Hidden on Desktop) */}
-            <div className="flex md:hidden w-full relative mt-6 flex justify-center">
-              <motion.div className="relative w-full h-[600px] sm:h-[400px]">
-                <Image
-                  src={section.image}
-                  alt={section.title}
-                  width={600}
-                  height={800}
+                  width={700} // Increased width for mobile
+                  height={900} // Increased height for mobile
                   className="w-full h-full object-cover rounded-lg"
                   priority
                 />
@@ -141,6 +131,54 @@ export default function HeroParallax() {
           </div>
         </section>
       ))}
+
+      {/* Second Section */}
+      {!showMore && (
+        <div className="flex justify-center my-8">
+          <button
+            className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition"
+            onClick={() => setShowMore(true)}
+          >
+            Know More
+          </button>
+        </div>
+      )}
+
+      {showMore &&
+        moreSections.map((section, index) => (
+          <section
+            key={index}
+            className={`relative flex flex-col md:flex-row items-center justify-center ${section.bgColor} py-10 md:py-12 pb-5 md:pb-10`}
+          >
+            <div className="relative flex flex-col md:flex-row w-full max-w-6xl mx-auto px-4 md:px-8">
+              <div
+                className={`flex flex-col items-start text-left justify-center w-full md:w-1/2 ${section.textColor} px-2 sm:px-4 md:px-8 mt-8 md:mt-0`}
+              >
+                <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight mt-4 sm:mt-0">
+                  {section.title}
+                </h1>
+                <p className="text-base sm:text-lg md:text-xl mt-3 sm:mt-4">
+                  {section.subtitle}
+                </p>
+                <p className="text-sm sm:text-base md:text-lg mt-2 sm:mt-3 leading-relaxed w-full sm:w-auto">
+                  {section.description}
+                </p>
+              </div>
+              <div className="flex w-full md:w-1/2 justify-center mt-6 md:mt-0">
+                <motion.div className="relative w-full h-[600px] sm:h-[600px] md:h-[600px] lg:h-[800px]">
+                  <Image
+                    src={section.image}
+                    alt={section.title}
+                    width={700} // Increased width for mobile
+                    height={900} // Increased height for mobile
+                    className="w-full h-full object-cover rounded-lg"
+                    priority
+                  />
+                </motion.div>
+              </div>
+            </div>
+          </section>
+        ))}
     </div>
   );
 }
