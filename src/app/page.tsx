@@ -13,13 +13,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Guide />
-      <HeroParallax/>
+      <HeroParallax id="hero-parallax" />
       <TrendingColours />
       <About />
       <Contact />
       <Footer />
-      
     </main>
   )
 }
-

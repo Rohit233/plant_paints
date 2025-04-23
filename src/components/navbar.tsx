@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Home, Package, Hammer, Info, Phone, Calendar, Menu, X } from "lucide-react";
+import Image from "next/image"; // ✅ Import Image component
+import { Home, Package, Hammer, Info, Calendar, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,14 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center">
         <h1 className="text-2xl font-bold text-gray-800">
-          <img src="/assets/logocol.png" alt="Logo" className="h-20 w-auto" />
+          <Image
+            src="/assets/logocol.png"
+            alt="Logo"
+            width={80}
+            height={80}
+            className="h-20 w-auto object-contain"
+            priority
+          />
         </h1>
       </div>
 
@@ -24,21 +32,26 @@ export default function Navbar() {
         <NavLink href="/about" icon={<Info size={18} />} label="About Us" />
       </nav>
 
-     {/* Book Visit Button */}
-<div className="hidden md:flex items-center space-x-4">
-  <Link href="/contact" className="bg-yellow-500 text-gray-800 px-4 py-2 rounded-md font-medium flex items-center gap-2 hover:bg-yellow-600 transition duration-300">
-    <Calendar size={18} />
-    <span>Contact Us</span>
-  </Link>
-</div>
-
+      {/* Book Visit Button */}
+      <div className="hidden md:flex items-center space-x-4">
+        <Link
+          href="/contact"
+          className="bg-yellow-500 text-gray-800 px-4 py-2 rounded-md font-medium flex items-center gap-2 hover:bg-yellow-600 transition duration-300"
+        >
+          <Calendar size={18} />
+          <span>Contact Us</span>
+        </Link>
+      </div>
 
       {/* Hamburger - Mobile */}
       <div className="md:hidden flex items-center space-x-3">
-      <Link href="/contact" className="bg-yellow-500 text-gray-800 px-3 py-1.5 rounded-md text-sm font-medium flex items-center gap-1 hover:bg-yellow-600 transition duration-300">
-      <Calendar size={16} />
-        Contact Us
-      </Link>
+        <Link
+          href="/contact"
+          className="bg-yellow-500 text-gray-800 px-3 py-1.5 rounded-md text-sm font-medium flex items-center gap-1 hover:bg-yellow-600 transition duration-300"
+        >
+          <Calendar size={16} />
+          Contact Us
+        </Link>
         <button onClick={() => setMenuOpen(!menuOpen)} className="focus:outline-none">
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -51,7 +64,6 @@ export default function Navbar() {
           <MobileNavLink href="/products" label="Products" />
           <MobileNavLink href="/services" label="Services" />
           <MobileNavLink href="/about" label="About Us" />
-          
         </div>
       )}
     </header>
@@ -61,7 +73,10 @@ export default function Navbar() {
 // Reusable nav link for desktop
 function NavLink({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) {
   return (
-    <Link href={href} className="group text-gray-700 hover:text-red-500 font-medium flex items-center gap-2 transition duration-300">
+    <Link
+      href={href}
+      className="group text-gray-700 hover:text-red-500 font-medium flex items-center gap-2 transition duration-300"
+    >
       {icon}
       <span>{label}</span>
     </Link>
@@ -71,7 +86,10 @@ function NavLink({ href, icon, label }: { href: string; icon: React.ReactNode; l
 // Reusable nav link for mobile
 function MobileNavLink({ href, label }: { href: string; label: string }) {
   return (
-    <Link href={href} className="text-gray-700 hover:text-red-500 font-medium text-base transition duration-300">
+    <Link
+      href={href}
+      className="text-gray-700 hover:text-red-500 font-medium text-base transition duration-300"
+    >
       {label}
     </Link>
   );

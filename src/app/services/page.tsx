@@ -1,15 +1,13 @@
 "use client";
 import React, { useState, FormEvent } from "react";
+import Image from 'next/image';
 import {
   Phone,
-  Mail,
   MapPin,
   CheckCircle,
   Navigation,
   ChevronRight,
-  MessageCircle,
   User,
-  Calendar,
   Clock,
   Shield,
 } from "lucide-react";
@@ -18,12 +16,12 @@ import Footer from "@/components/footer";
 
 const App: React.FC = () => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [email,] = useState("");
   const [mobile, setMobile] = useState("");
   const [pincode, setPincode] = useState("");
   const [whatsappUpdates, setWhatsappUpdates] = useState(false);
-  const [constructionWork, setConstructionWork] = useState("");
-  const [localPainter, setLocalPainter] = useState("");
+  const [constructionWork,] = useState("");
+  const [localPainter,] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
@@ -386,23 +384,27 @@ const App: React.FC = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             <div className="flex flex-col items-center text-center group">
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md transition-transform group-hover:scale-105 duration-300">
-                <img
-                  src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJpb3J8ZW58MHx8MHx8fDA%3D"
-                  alt="Expert Site Supervision"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md transition-transform group-hover:scale-105 duration-300">
+  <Image
+    src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJpb3J8ZW58MHx8MHx8fDA%3D"
+    alt="Expert Site Supervision"
+    className="w-full h-full object-cover"
+    width={128}  // Provide the width of the image
+    height={128} // Provide the height of the image
+  />
+</div>
               <h3 className="font-medium text-lg text-gray-800">Expert Site</h3>
               <p className="text-gray-600">Supervision</p>
             </div>
 
             <div className="flex flex-col items-center text-center group">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md transition-transform group-hover:scale-105 duration-300">
-                <img
+                <Image
                   src="https://i.pinimg.com/736x/53/91/e9/5391e90ffeaf66e776ac3199a42e5be0.jpg"
                   alt="Trained Professionals"
                   className="w-full h-full object-cover"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
               </div>
               <h3 className="font-medium text-lg text-gray-800">Trained</h3>
@@ -411,10 +413,12 @@ const App: React.FC = () => {
 
             <div className="flex flex-col items-center text-center group">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md transition-transform group-hover:scale-105 duration-300">
-                <img
+                <Image
                   src="https://i.pinimg.com/736x/27/93/c8/2793c84bfb6c7334179c4eebca661e40.jpg"
                   alt="Dust Free Mechanised Painting"
                   className="w-full h-full object-cover"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
               </div>
               <h3 className="font-medium text-lg text-gray-800">Dust Free</h3>
@@ -423,10 +427,12 @@ const App: React.FC = () => {
 
             <div className="flex flex-col items-center text-center group">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md transition-transform group-hover:scale-105 duration-300">
-                <img
+                <Image
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Rb7VOQKEctFz9_7TJ3OEreJlrHgVJcLyztJ2Iuc6tybdqEu82cxbT-ZmD3VRNBT3aaU&usqp=CAU"
                   alt="Superior Finish"
                   className="w-full h-full object-cover"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
               </div>
               <h3 className="font-medium text-lg text-gray-800">
@@ -437,10 +443,12 @@ const App: React.FC = () => {
 
             <div className="flex flex-col items-center text-center group">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md transition-transform group-hover:scale-105 duration-300">
-                <img
+                <Image
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtEC0TGTiAWD2puRzJeSB8w2-5AXUll1oetw&s"
                   alt="Full Home Cleaning After Painting"
                   className="w-full h-full object-cover"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
               </div>
               <h3 className="font-medium text-lg text-gray-800">
@@ -451,10 +459,12 @@ const App: React.FC = () => {
 
             <div className="flex flex-col items-center text-center group">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md transition-transform group-hover:scale-105 duration-300">
-                <img
+                <Image
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mcJxHOkZMFt5AbrjLJhrvH3JXBAWCqUmZw&s"
                   alt="ColorPro Paints Warranty"
                   className="w-full h-full object-cover"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
               </div>
               <h3 className="font-medium text-lg text-gray-800">
@@ -476,10 +486,12 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-300">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://www.lascrucesbulletin.com/uploads/original/20190709-170146-Hotel%201.JPG"
                   alt="Government Color Provided"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl font-bold text-white">
@@ -490,7 +502,7 @@ const App: React.FC = () => {
               <div className="p-6">
                 <p className="text-gray-600 mb-4">
                   We also work with government-approved paints and the for color
-                  schemes for residential and commercial projects."{" "}
+                  schemes for residential and commercial projects.
                 </p>
                 <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-800 px-4 py-2 rounded-lg font-medium transition duration-300 flex items-center gap-2">
                   <span>Learn More</span>
@@ -501,10 +513,12 @@ const App: React.FC = () => {
 
             <div className="rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-300">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://5.imimg.com/data5/SELLER/Default/2021/6/BJ/KG/GU/51997066/commercial-building-painting-service.jpg"
                   alt=" Commercial Building Contractors"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl font-bold text-white">
@@ -516,7 +530,7 @@ const App: React.FC = () => {
               <div className="p-6">
                 <p className="text-gray-600 mb-4">
                   Our commercial building services cover large-scale painting
-                  and maintenance projects for offices, apartments, and more."{" "}
+                  and maintenance projects for offices, apartments, and more.
                 </p>
                 <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-800 px-4 py-2 rounded-lg font-medium transition duration-300 flex items-center gap-2">
                   <span>Learn More</span>
@@ -527,10 +541,12 @@ const App: React.FC = () => {
 
             <div className="rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-300">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://5.imimg.com/data5/HF/JC/GLADMIN-39799522/house-interior-painting-service.jpg"
                   alt="Interior Painting"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl font-bold text-white">
@@ -552,10 +568,12 @@ const App: React.FC = () => {
 
             <div className="rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-300">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://i0.wp.com/www.colourdrive.in/diy/wp-content/uploads/2018/06/dancing-waves-4.jpg?fit=1140%2C728&ssl=1"
                   alt="Exterior Painting"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl font-bold text-white">
@@ -564,10 +582,11 @@ const App: React.FC = () => {
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-gray-600 mb-4">
-                  Protect and beautify your home's exterior with our durable
-                  painting solutions and the for weather-resistant paints.
-                </p>
+              <p className="text-gray-600 mb-4">
+              Protect and beautify your home exterior with our durable
+              painting solutions and the for weather-resistant paints.
+              </p>
+
                 <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-800 px-4 py-2 rounded-lg font-medium transition duration-300 flex items-center gap-2">
                   <span>Learn More</span>
                   <ChevronRight size={18} />
@@ -577,10 +596,12 @@ const App: React.FC = () => {
 
             <div className="rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-300">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://www.bpmcdn.com/f/files/salmonarm/import/2017-06/web1_20170619-SAA-Rainbow-Building-JE-0001.jpg"
                   alt="Wallpaper Installation"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl font-bold text-white">
@@ -602,10 +623,12 @@ const App: React.FC = () => {
 
             <div className="rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-300">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://assets.architecturaldigest.in/photos/66ffa18e11e19065f420e338/16:9/w_1616,h_909,c_limit/Untitled%20design%20-%202024-10-04T132207.133.png"
                   alt="Waterproofing Solutions"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl font-bold text-white">
@@ -628,10 +651,12 @@ const App: React.FC = () => {
 
             <div className="rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-300">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://www.thespruce.com/thmb/OzJ3aLbbhYJJuIXa6hHV9P_FgNI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/67_canvas_jc_buck_1200px-d3a9070209b447b28ec2bc116dafb5ff.jpg"
                   alt="Texture Painting"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl font-bold text-white">
@@ -653,10 +678,12 @@ const App: React.FC = () => {
 
             <div className="rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-300">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSOc1qrRWDQi8y8FOsGkDkAwh3ruWsAu2-CxbkSa_GT_oL0hxSOqimCB7nfsm8EWvlMaM&usqp=CAU"
                   alt="Wood Finishing"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl font-bold text-white">
@@ -705,16 +732,18 @@ const App: React.FC = () => {
               </div>
 
               <p className="text-gray-600 mb-4">
-                "The team at plant Paints did an amazing job on our living room.
+                The team at plant Paints did an amazing job on our living room
                 The attention to detail and the quality of work exceeded our
-                expectations. Highly recommended!"
+                expectations. Highly recommended.
               </p>
 
               <div className="flex items-center mt-6">
-                <img
+                <Image
                   src="https://media.istockphoto.com/id/1216248810/photo/young-man-at-white-background-stock-images.webp?a=1&b=1&s=612x612&w=0&k=20&c=OCl-o7ZqeZLJHQpb4QeLZ1jNquFCIHaPUW4pi5qdqcI="
                   alt="Customer"
                   className="w-10 h-10 rounded-full mr-3"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div>
                   <h4 className="font-medium text-gray-800">Rajesh Kumar</h4>
@@ -741,17 +770,19 @@ const App: React.FC = () => {
               </div>
 
               <p className="text-gray-600 mb-4">
-                "Professional service from start to finish. The painters were
+                Professional service from start to finish. The painters were
                 punctual, clean and precise. Our home looks brand new and the
                 mechanized painting made a huge difference in the finish
-                quality."
+                quality.
               </p>
 
               <div className="flex items-center mt-6">
-                <img
+                <Image
                   src="https://media.istockphoto.com/id/164667814/photo/portrait-of-young-beautiful-indian-smiling-women.jpg?s=612x612&w=0&k=20&c=Fv3_npB6g5yVQ-Ac7_rRwvDedLQ4ZlQPZo5nEudIZk4="
                   alt="Customer"
                   className="w-10 h-10 rounded-full mr-3"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div>
                   <h4 className="font-medium text-gray-800">Priya Sharma</h4>
@@ -778,16 +809,18 @@ const App: React.FC = () => {
               </div>
 
               <p className="text-gray-600 mb-4">
-                "I was impressed by their waterproofing solutions. Not only did
+                I was impressed by their waterproofing solutions. Not only did
                 they fix our leakage issues, but they also gave us a 5-year
-                warranty. The team was knowledgeable and efficient."
+                warranty. The team was knowledgeable and efficient.
               </p>
 
               <div className="flex items-center mt-6">
-                <img
+                <Image
                   src="https://media.istockphoto.com/id/1005817658/photo/middle-aged-man-with-pleasant-face-expression.jpg?s=612x612&w=0&k=20&c=3YTdAT-m9io-zEF2aOmJsRz7tKVHlHSHvDFSILp6FAY="
                   alt="Customer"
                   className="w-10 h-10 rounded-full mr-3"
+                  width={128}  // Provide the width of the image
+                  height={128} // Provide the height of the image
                 />
                 <div>
                   <h4 className="font-medium text-gray-800">Vikram Singh</h4>

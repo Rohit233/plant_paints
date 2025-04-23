@@ -1,12 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import { IdCardIcon } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const sections = [
   {
-    id: 1, // ✅ Add an ID to each product
+    id: 1,
     title: "MARVAL Luxury Emulsion",
     subtitle: "Extra Sheen Finish for Lasting Elegance",
     description:
@@ -105,10 +104,8 @@ export default function HeroParallax({ id }: { id: string | null }) {
     router.push(`/products?id=${id}`);
   };
 
-  // Convert the string ID to a number (since section ids are numbers)
   const parsedId = id ? parseInt(id) : null;
 
-  // Filter sections based on ID (if present)
   const filteredSections = parsedId
     ? sections.filter((section) => section.id === parsedId)
     : sections;
@@ -134,14 +131,12 @@ export default function HeroParallax({ id }: { id: string | null }) {
               <p className="text-sm sm:text-base md:text-lg mt-2 sm:mt-3 leading-relaxed w-full sm:w-auto">
                 {section.description}
               </p>
-              {!id ? (
-                <button
-                  onClick={() => handleKnowMoreClick(section.id)}
-                  className="mt-4 px-4 py-2 bg-black text-white rounded hover:bg-opacity-80 transition"
-                >
-                  Know More
-                </button>
-              ) : null}
+              <button
+                onClick={() => handleKnowMoreClick(section.id)}
+                className="mt-4 px-4 py-2 bg-black text-white rounded hover:bg-opacity-80 transition"
+              >
+                Know More
+              </button>
             </div>
 
             {/* Desktop Image */}
