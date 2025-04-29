@@ -130,7 +130,7 @@ export default function Footer() {
       href="tel:1234567890"
       className="text-gray-400 hover:text-white transition-colors"
     >
-      (123) 456-7890
+      +917350503873
     </a>
   </div>
   <div className="flex items-center">
@@ -139,7 +139,7 @@ export default function Footer() {
       href="mailto:care@planetpaints.in"
       className="text-gray-400 hover:text-white transition-colors"
     >
-      care@planetpaints.in
+      Support@planetpaints.in
     </a>
   </div>
 </div>

@@ -1,76 +1,95 @@
 import Image from "next/image"
-
 import { Button } from "@/components/ui/button"
+import {  Award, TrendingUp, Users } from "lucide-react"
 
-export default function Abouts() {
+export default function About() {
   return (
-    <section id="about" className="py-24">
-      <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold">About PlantPaints</h2>
-            <p className="text-muted-foreground">
-              With over two decades of experience in the paint industry, PlantPaints has been transforming spaces and
-              bringing colors to life. Our premium paints combine durability, vibrant pigments, and eco-friendly 
-              formulations to deliver exceptional results for every project.
+    <section id="who-we-are" className="py-24 bg-blue-50">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <p className="text-xl text-primary font-medium italic mb-6">
+            Create happy customers by delivering best-in-class premium paints at affordable prices
+          </p>
+          <h2 className="text-5xl font-bold text-blue-700 mb-6">WHO WE ARE?</h2>
+          <div className="w-24 h-1 bg-primary rounded-full mx-auto mb-8"></div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8">
+            <p className="text-lg leading-relaxed">
+              Planet Paints is a budding new age paint manufacturer that believes in philosophy of 
+              delivering premium quality paints at unbelievably affordable price. We are an 
+              expansion phase family business. We continue to expand our family member in the 
+              form of our customers and distributors across the country.
             </p>
-            <div className="space-y-4">
-              <div className="flex gap-2">
+            
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start bg-white p-6 rounded-xl shadow-sm">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                  <span className="font-bold text-primary">20+</span>
+                  <Users className="text-primary w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Years of Excellence</h3>
-                  <p className="text-sm text-muted-foreground">Setting color trends since 2000</p>
+                  <h3 className="font-semibold text-xl mb-2">Experienced Team</h3>
+                  <p className="text-muted-foreground">
+                    Our team includes people with 20 years & experience in paint industry. Our top notch
+                    engineers bring in paints from top international company.
+                  </p>
                 </div>
               </div>
-              <div className="flex gap-2">
+              
+              <div className="flex gap-4 items-start bg-white p-6 rounded-xl shadow-sm">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                  <span className="font-bold text-primary">5K+</span>
+                  <TrendingUp className="text-primary w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Happy Customers</h3>
-                  <p className="text-sm text-muted-foreground">From homeowners to professional contractors</p>
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                  <span className="font-bold text-primary">2K+</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold">Color Options</h3>
-                  <p className="text-sm text-muted-foreground">Custom tints and designer palettes</p>
+                  <h3 className="font-semibold text-xl mb-2">Family Business</h3>
+                  <p className="text-muted-foreground">
+                    An expansion phase family business growing across the country through our
+                    network of customers and distributors.
+                  </p>
                 </div>
               </div>
             </div>
-            <Button size="lg">Discover Our Story</Button>
+            
+            <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-md">
+              <p className="text-blue-800 italic text-lg">
+                We do not hire big stars as brand ambassadors or buy prime TV slots for advertisement.
+              </p>
+              <p className="text-blue-600 font-medium mt-2">— Planet Paints Philosophy</p>
+            </div>
+            
+            <div className="flex gap-4 pt-4">
+              <Button size="lg" className="rounded-full px-8 shadow-md hover:shadow-lg transition-all">
+                Learn More
+              </Button>
+            </div>
           </div>
-          <div className="space-y-4">
-            <div className="relative h-[350px] w-full">
+          
+          <div className="relative">
+            <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="PlantPaints Paint Showroom"
+                src="/assets/116.jpg"
+                alt="Planet Paints Factory"
                 fill
-                className="object-cover rounded-lg"
+                // className="object-cover"
               />
+              <div className="absolute inset-0 bg-gray-300 bg-opacity-30"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-8">
+                <div className="bg-white/90 p-6 rounded-xl shadow-lg">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Award className="text-primary w-8 h-8" />
+                    <h3 className="text-2xl font-bold text-blue-800">Our Philosophy</h3>
+                  </div>
+                  <p className="text-blue-700">
+                    Premium quality at affordable prices. We prioritize product excellence and customer 
+                    satisfaction over expensive marketing campaigns.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative h-[120px]">
-                <Image
-                  src="https://cdn.pixabay.com/photo/2017/01/16/14/58/color-patterns-1984230_1280.jpg"
-                  alt="Custom Paint Mixing"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-              <div className="relative h-[120px]">
-                <Image
-                  src="https://cdn.pixabay.com/photo/2019/05/09/15/45/paint-4191399_1280.jpg"
-                  alt="Color Sample Wall"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
+            
+            <div className="absolute -top-6 -right-6 bg-primary text-white text-xl font-bold p-4 rounded-xl shadow-lg rotate-3">
+              ISO Certified
             </div>
           </div>
         </div>
@@ -78,4 +97,3 @@ export default function Abouts() {
     </section>
   )
 }
-

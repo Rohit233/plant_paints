@@ -14,7 +14,7 @@ export default function Contactus() {
 
   const handleSendMessage = () => {
     const whatsappMessage = `Hello, my name is ${fullName}. My mobile number is ${mobileNumber}. Message: ${message}`;
-    const whatsappURL = `https://wa.me/9579556695?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappURL = `https://wa.me/7350503873?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappURL, "_blank");
   };
 

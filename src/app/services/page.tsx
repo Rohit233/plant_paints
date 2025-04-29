@@ -410,7 +410,7 @@ const App: React.FC = () => {
               <h3 className="font-medium text-lg text-gray-800">Trained</h3>
               <p className="text-gray-600">Professionals</p>
             </div>
-
+            
             <div className="flex flex-col items-center text-center group">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md transition-transform group-hover:scale-105 duration-300">
                 <Image
@@ -845,7 +845,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-          <a href="tel:1234567890" className="bg-yellow-500 hover:bg-yellow-600 text-gray-800 px-6 py-3 rounded-lg font-bold transition duration-300 flex items-center justify-center gap-2">
+          <a href="tel:7350503873" className="bg-yellow-500 hover:bg-yellow-600 text-gray-800 px-6 py-3 rounded-lg font-bold transition duration-300 flex items-center justify-center gap-2">
   <Phone size={20} />
   <span>CALL US NOW</span>
 </a>
