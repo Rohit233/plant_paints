@@ -57,7 +57,7 @@ const sections = [
   {
     id: 20,
     brand: "PlanetPaints",
-    title: "PVC Blocks",
+    title: "AAC Blocks",
     subtitle: "Versatile and Durable Building Solution",
     description: "High-quality PVC blocks designed for various construction needs. These blocks are lightweight, fire-resistant, and offer excellent thermal and sound insulation. Ideal for creating durable and efficient walls with minimal maintenance.",
     image: "/assets/110.webp",

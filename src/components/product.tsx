@@ -7,7 +7,7 @@ import HeroParallax from "./heroParalla";
 
 const product = [
   {
-    title: "PVC Blocks",
+    title: "AAC Blocks",
     image: "/assets/110.webp",
     bgColor: "bg-emerald-100", // Light green background
     id:20
