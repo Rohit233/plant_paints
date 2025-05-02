@@ -130,38 +130,10 @@ const product = [
 
 export default function Product({id}: { id: string | null }) {
   const router = useRouter();
-  // const [selectedProduct, setSelectedProduct] = useState<{
-  //   title: string;
-  //   image: string;
-  //   description: string;
-  //   bgColor?: string;
-  // } | null>(null);
 
   return (
     <>
      {id && <HeroParallax id={id} />}
-
-      {/*  {selectedProduct && (
-        <div className="w-full h-[90vh] relative">
-          <Image
-            src={selectedProduct.image}
-            alt={selectedProduct.title}
-            layout="fill"
-            objectFit="cover"
-            className="object-cover"
-          />
-          <div
-            className={`absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4 ${selectedProduct.bgColor}`}
-          >
-            <h2 className="text-gray-800 text-2xl sm:text-4xl font-bold mb-3">
-              {selectedProduct.title}
-            </h2>
-            <p className="text-gray-700 text-base sm:text-lg max-w-xl">
-              {selectedProduct.description}
-            </p>
-          </div>
-        </div>
-      )} */}
 
       {/* Product Section */}
       <section

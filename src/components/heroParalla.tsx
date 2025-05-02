@@ -40,15 +40,14 @@ interface Product {
     putty?: string;
     packaging?: string;
     features?: string[];
-    mainDescription?:string;
-    finish?:string;
-    application?:string;
-    coverage?:string;
-    directions?:string;
-    warning?:string;
-    precautions?:string[];
-    warranty?:string;
-    
+    mainDescription?: string;
+    finish?: string;
+    application?: string;
+    coverage?: string;
+    directions?: string;
+    warning?: string;
+    precautions?: string[];
+    warranty?: string;
   };
 }
 
@@ -59,418 +58,617 @@ const sections = [
     brand: "PlanetPaints",
     title: "AAC Blocks",
     subtitle: "Versatile and Durable Building Solution",
-    description: "High-quality PVC blocks designed for various construction needs. These blocks are lightweight, fire-resistant, and offer excellent thermal and sound insulation. Ideal for creating durable and efficient walls with minimal maintenance.",
+    description:
+      "High-quality PVC blocks designed for various construction needs. These blocks are lightweight, fire-resistant, and offer excellent thermal and sound insulation. Ideal for creating durable and efficient walls with minimal maintenance.",
     image: "/assets/110.webp",
     bgColor: "bg-blue-200",
     textColor: "text-black",
     applications: [],
     detailedInstructions: {
-      cleaning: "Sand the surface with emery Paper 180 to remove loose particles. Wipe clean to ensure proper adhesion.",
-      primer: "Apply surface preparation primer for optimal adhesion. Allow drying for 6-8 hours before proceeding.",
+      cleaning:
+        "Sand the surface with emery Paper 180 to remove loose particles. Wipe clean to ensure proper adhesion.",
+      primer:
+        "Apply surface preparation primer for optimal adhesion. Allow drying for 6-8 hours before proceeding.",
       topcoat: "Not applicable for PVC blocks installation.",
-      putty: "Use appropriate adhesive or mortar for joining blocks. Ensure proper alignment and leveling during installation.",
-      packaging: "Available in standard packs with sizes: 625 x 240 mm and 600 x 200 mm with varying thickness options",
+      putty:
+        "Use appropriate adhesive or mortar for joining blocks. Ensure proper alignment and leveling during installation.",
+      packaging:
+        "Available in standard packs with sizes: 625 x 240 mm and 600 x 200 mm with varying thickness options",
       features: [
         "Lightweight and easy to install",
         "Excellent thermal insulation",
         "Superior sound reduction",
         "Fire-resistant",
         "Low maintenance",
-        "Durable and long-lasting"
-      ]
-    }
+        "Durable and long-lasting",
+      ],
+    },
   },
   {
     id: 1,
-    brand:"PlanetPaints",
-    applications:[],
+    brand: "PlanetPaints",
+    applications: [],
     title: "MARVAL Luxury Emulsion",
     subtitle: "Extra Sheen Finish for Lasting Elegance",
-    description: "A premium paint with an extra sheen finish for an elegant look. It offers long-lasting protection with stain resistance and anti-dust technology. The washable formula ensures easy maintenance and vibrant walls. Elevate your space with luxury and durability.",
+    description:
+      "A premium paint with an extra sheen finish for an elegant look. It offers long-lasting protection with stain resistance and anti-dust technology. The washable formula ensures easy maintenance and vibrant walls. Elevate your space with luxury and durability.",
     image: "/assets/1.png",
     bgColor: "bg-fuchsia-300",
     textColor: "text-black",
     detailedInstructions: {
-      cleaning: "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
-      primer: "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
-      topcoat: "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
-      putty: "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
+      cleaning:
+        "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
+      primer:
+        "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
+      topcoat:
+        "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
+      putty:
+        "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Luxury Finish", "Weather Protection", "Stain Resistant", "Superior Stain Resistance", "Dirt Guard Technology"]
-    }
+      features: [
+        "Luxury Finish",
+        "Weather Protection",
+        "Stain Resistant",
+        "Superior Stain Resistance",
+        "Dirt Guard Technology",
+      ],
+    },
   },
   {
     id: 2,
     title: "SPARX Acrylic Emulsion",
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     subtitle: "Premium Interior & Exterior Paint for a Smooth Finish",
-    description: "A premium paint for interior and exterior surfaces, offering a smooth finish with excellent coverage. Its washable formula ensures easy maintenance, while anti-fungal properties protect surfaces. Resistant to stains and weather conditions, it ensures long-lasting beauty. Choose SPARX for elegance and durability.",
+    description:
+      "A premium paint for interior and exterior surfaces, offering a smooth finish with excellent coverage. Its washable formula ensures easy maintenance, while anti-fungal properties protect surfaces. Resistant to stains and weather conditions, it ensures long-lasting beauty. Choose SPARX for elegance and durability.",
     image: "/assets/2.png",
     bgColor: "bg-violet-300",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "The Science of High Volume solid matt emulsion in this paint delivers higher coverage and uniform finish. It is an eco-friendly product which contains no added Lead, Mercury.",
+      mainDescription:
+        "The Science of High Volume solid matt emulsion in this paint delivers higher coverage and uniform finish. It is an eco-friendly product which contains no added Lead, Mercury.",
       finish: "Smooth & Matt",
-      application: "All kind of interior plaster, concrete and masonry surfaces",
-      cleaning: "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
-      putty: "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
-      primer: "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
-      topcoat: "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
+      application:
+        "All kind of interior plaster, concrete and masonry surfaces",
+      cleaning:
+        "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
+      putty:
+        "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
+      primer:
+        "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
+      topcoat:
+        "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Smooth Finish", "Excellent Coverage", "Easily Washable", "Anti-Fungus"]
-    }
+      features: [
+        "Smooth Finish",
+        "Excellent Coverage",
+        "Easily Washable",
+        "Anti-Fungus",
+      ],
+    },
   },
   {
     id: 3,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "TRENCH COAT Luxury Emulsion",
     subtitle: "Extra Sheen Finish",
-    description: "A premium extra sheen paint for a rich, elegant finish. It offers long-lasting protection with stain resistance and superior flexibility. The washable formula ensures easy maintenance and a fresh look. Elastomeric properties provide crack resistance for durable walls. Experience luxury and lasting beauty with TRENCH COAT.",
+    description:
+      "A premium extra sheen paint for a rich, elegant finish. It offers long-lasting protection with stain resistance and superior flexibility. The washable formula ensures easy maintenance and a fresh look. Elastomeric properties provide crack resistance for durable walls. Experience luxury and lasting beauty with TRENCH COAT.",
     image: "/assets/3.png",
     bgColor: "bg-blue-300 ",
     textColor: "text-black",
     detailedInstructions: {
-      cleaning: "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
-      primer: "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
-      topcoat: "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
-      putty: "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
+      cleaning:
+        "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
+      primer:
+        "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
+      topcoat:
+        "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
+      putty:
+        "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
       warranty: "5 Years",
-      features: ["Luxury Finish", "Superior Protection", "Stain Resistance", "Weather Resistant"]
-    }
+      features: [
+        "Luxury Finish",
+        "Superior Protection",
+        "Stain Resistance",
+        "Weather Resistant",
+      ],
+    },
   },
   {
     id: 4,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "VITARA Premium Emulsion",
     subtitle: "Interior & Exterior",
-    description: "A high-quality paint for interior and exterior walls with a smooth, elegant finish. It offers long-lasting protection against weather and daily wear. The washable formula ensures easy maintenance and freshness. Antibacterial properties promote a healthier environment. Enjoy superior coverage with fewer coats for a flawless look.",
+    description:
+      "A high-quality paint for interior and exterior walls with a smooth, elegant finish. It offers long-lasting protection against weather and daily wear. The washable formula ensures easy maintenance and freshness. Antibacterial properties promote a healthier environment. Enjoy superior coverage with fewer coats for a flawless look.",
     image: "/assets/4.png",
     bgColor: "bg-yellow-200",
     textColor: "text-black",
     detailedInstructions: {
-      cleaning: "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
-      primer: "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
-      topcoat: "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
-      putty: "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
+      cleaning:
+        "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
+      primer:
+        "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
+      topcoat:
+        "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
+      putty:
+        "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Best Coverage", "Lasting Protection", "Easy Washable", "Alkaline Resistance"]
-    }
+      features: [
+        "Best Coverage",
+        "Lasting Protection",
+        "Easy Washable",
+        "Alkaline Resistance",
+      ],
+    },
   },
   {
     id: 5,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "EXPERT Acrylic Water-Based Primer",
     subtitle: "Lasting Gloss and Durability",
-    description: "A high-performance primer ensuring strong adhesion for topcoats. Its alkali resistance protects surfaces from moisture damage. Designed for smooth, uniform coverage and reduced paint absorption. Suitable for interior and exterior use, it enhances durability. Achieve a flawless, long-lasting finish with EXPERT Primer.",
+    description:
+      "A high-performance primer ensuring strong adhesion for topcoats. Its alkali resistance protects surfaces from moisture damage. Designed for smooth, uniform coverage and reduced paint absorption. Suitable for interior and exterior use, it enhances durability. Achieve a flawless, long-lasting finish with EXPERT Primer.",
     image: "/assets/5.png",
     bgColor: "bg-cyan-200",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "Expert wall Primer is a water based wall coating suitable for applications on interior as an under coat to interior Emulsion",
-      directions: "Surface preparation for interior use: Ensure thorough cleaning of the surface with wire brushing followed by High-pressure water jet cleaning. All structural cracks must be filled with suitable cement based plaster. In case of fungus affected area apply a coat of planet paints fungicidal wall wash solution and leave for 6-8 hours apply suitable Primer recommended for interior and exterior applications allow priming coat to hard dry for min 6-8 hrs followed by planet paints finishing coat",
+      mainDescription:
+        "Expert wall Primer is a water based wall coating suitable for applications on interior as an under coat to interior Emulsion",
+      directions:
+        "Surface preparation for interior use: Ensure thorough cleaning of the surface with wire brushing followed by High-pressure water jet cleaning. All structural cracks must be filled with suitable cement based plaster. In case of fungus affected area apply a coat of planet paints fungicidal wall wash solution and leave for 6-8 hours apply suitable Primer recommended for interior and exterior applications allow priming coat to hard dry for min 6-8 hrs followed by planet paints finishing coat",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Easy Application", "Excellent Coverage", "Alkali Resistance", "Seals Dry Porous Surface"]
-    }
+      features: [
+        "Easy Application",
+        "Excellent Coverage",
+        "Alkali Resistance",
+        "Seals Dry Porous Surface",
+      ],
+    },
   },
   {
     id: 6,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "ELITE Acrylic Washable Distempers",
     subtitle: "Interior | 100% Acrylic",
-    description: "A premium 100% acrylic interior paint with excellent washability. It offers a smooth, rich finish for elegant walls. Superior coverage ensures minimal paint consumption and vibrant results. Durable and resistant to peeling for long-lasting beauty. Ideal for modern residential and commercial spaces.",
+    description:
+      "A premium 100% acrylic interior paint with excellent washability. It offers a smooth, rich finish for elegant walls. Superior coverage ensures minimal paint consumption and vibrant results. Durable and resistant to peeling for long-lasting beauty. Ideal for modern residential and commercial spaces.",
     image: "/assets/7.png",
     bgColor: "bg-pink-200",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "A water based interior wall distemper with better bond and high coverage offering rich matt finish's washable features give brighter and cleaner shades resulting in beautiful smooth walls.",
+      mainDescription:
+        "A water based interior wall distemper with better bond and high coverage offering rich matt finish's washable features give brighter and cleaner shades resulting in beautiful smooth walls.",
       finish: "Smooth & Matt",
       coverage: "80-100 sqft /coat",
-      application: "All kind of interior plaster, concrete and masonry surfaces",
-      cleaning: "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
-      putty: "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
-      primer: "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
-      topcoat: "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats",
+      application:
+        "All kind of interior plaster, concrete and masonry surfaces",
+      cleaning:
+        "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
+      putty:
+        "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
+      primer:
+        "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
+      topcoat:
+        "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Smooth Finish", "Excellent Coverage", "Easily Washable", "Anti-Fungus"]
-    }
+      features: [
+        "Smooth Finish",
+        "Excellent Coverage",
+        "Easily Washable",
+        "Anti-Fungus",
+      ],
+    },
   },
   {
     id: 7,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "GREEK",
     subtitle: "ACRYLIC WATER BASED EXTERIOR PRIMER",
-    description: "GREEK Acrylic Water Based Exterior Primer offers a smooth and elegant finish designed for superior surface preparation. It provides excellent coverage, reducing the number of coats needed for a flawless look. The easily washable formula ensures your walls remain fresh and vibrant for years.",
+    description:
+      "GREEK Acrylic Water Based Exterior Primer offers a smooth and elegant finish designed for superior surface preparation. It provides excellent coverage, reducing the number of coats needed for a flawless look. The easily washable formula ensures your walls remain fresh and vibrant for years.",
     image: "/assets/2c.png",
     bgColor: "bg-amber-100",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "GREEK Acrylic water based primer wall coating suitable for applications on exterior surfaces as an undercoat to exterior emulsion paints.",
-      directions: "Surface preparation for exterior use: Clean the surface thoroughly with wire brushing and remove all dust, grease, and loose particles. Fill all cracks with suitable cement-based filler. Apply a coat of GREEK primer and allow to dry for 6-8 hours before applying top coats.",
+      mainDescription:
+        "GREEK Acrylic water based primer wall coating suitable for applications on exterior surfaces as an undercoat to exterior emulsion paints.",
+      directions:
+        "Surface preparation for exterior use: Clean the surface thoroughly with wire brushing and remove all dust, grease, and loose particles. Fill all cracks with suitable cement-based filler. Apply a coat of GREEK primer and allow to dry for 6-8 hours before applying top coats.",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Strong Adhesion", "Weather Resistant", "Reduces Paint Consumption", "Seals Porous Surfaces"]
-    }
+      features: [
+        "Strong Adhesion",
+        "Weather Resistant",
+        "Reduces Paint Consumption",
+        "Seals Porous Surfaces",
+      ],
+    },
   },
   {
     id: 8,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "TREO",
     subtitle: "Premium Acrylic Water-Based Formula",
-    description: "Transform your interior walls with TREO's professional-grade primer from Orchid Paints. This water-based acrylic formula ensures smooth application and excellent coverage for all indoor surfaces. TREO primer creates the perfect base for your paint, reducing overall paint consumption and enhancing the final finish.",
+    description:
+      "Transform your interior walls with TREO's professional-grade primer from Orchid Paints. This water-based acrylic formula ensures smooth application and excellent coverage for all indoor surfaces. TREO primer creates the perfect base for your paint, reducing overall paint consumption and enhancing the final finish.",
     image: "/assets/3c.png",
     bgColor: "bg-green-200",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "TREO interior wall primer is specially formulated to provide superior adhesion and uniform surface for interior paints.",
-      directions: "Surface should be clean, dry and free from dust, grease and loose particles. Apply TREO primer with brush or roller in uniform strokes. Allow to dry for 4-6 hours before applying top coats. For best results, apply two coats of primer.",
+      mainDescription:
+        "TREO interior wall primer is specially formulated to provide superior adhesion and uniform surface for interior paints.",
+      directions:
+        "Surface should be clean, dry and free from dust, grease and loose particles. Apply TREO primer with brush or roller in uniform strokes. Allow to dry for 4-6 hours before applying top coats. For best results, apply two coats of primer.",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Easy Application", "Excellent Coverage", "Reduces Paint Consumption", "Creates Uniform Surface"]
-    }
+      features: [
+        "Easy Application",
+        "Excellent Coverage",
+        "Reduces Paint Consumption",
+        "Creates Uniform Surface",
+      ],
+    },
   },
   {
     id: 9,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "ASTIR",
     subtitle: "Acrylic Exterior Emulsion",
-    description: "ASTIR exterior emulsion by Orchid Paints delivers superior protection against harsh weather conditions. This premium acrylic formula ensures excellent durability and color retention for your outdoor surfaces. Its advanced technology provides resistance against UV damage, mold, and moisture infiltration. Enjoy smooth application and exceptional coverage with this high-performance exterior paint.",
+    description:
+      "ASTIR exterior emulsion by Orchid Paints delivers superior protection against harsh weather conditions. This premium acrylic formula ensures excellent durability and color retention for your outdoor surfaces. Its advanced technology provides resistance against UV damage, mold, and moisture infiltration. Enjoy smooth application and exceptional coverage with this high-performance exterior paint.",
     image: "/assets/4c.png",
     bgColor: "bg-slate-400",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "ASTIR exterior acrylic emulsion provides long-lasting protection and beautiful finish for exterior walls.",
+      mainDescription:
+        "ASTIR exterior acrylic emulsion provides long-lasting protection and beautiful finish for exterior walls.",
       finish: "Smooth & Semi-Gloss",
       coverage: "90-110 sq.ft./liter per coat",
       application: "All exterior plastered, concrete and masonry surfaces",
-      cleaning: "Clean surface thoroughly removing all dust, dirt and loose particles. Wash with water if necessary and allow to dry completely.",
+      cleaning:
+        "Clean surface thoroughly removing all dust, dirt and loose particles. Wash with water if necessary and allow to dry completely.",
       primer: "Apply suitable exterior primer and allow to dry for 6-8 hours",
-      topcoat: "Apply 2-3 coats of ASTIR emulsion with brush or roller, allowing 4-6 hours drying time between coats",
+      topcoat:
+        "Apply 2-3 coats of ASTIR emulsion with brush or roller, allowing 4-6 hours drying time between coats",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["UV Resistant", "Weatherproof", "Anti-Fungal", "Excellent Color Retention", "Washable"]
-    }
+      features: [
+        "UV Resistant",
+        "Weatherproof",
+        "Anti-Fungal",
+        "Excellent Color Retention",
+        "Washable",
+      ],
+    },
   },
   {
     id: 10,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "INSTA",
     subtitle: "Interior | 100% Acrylic",
-    description: "A premium 100% acrylic interior paint with excellent washability. It offers a smooth, rich finish for elegant walls. Superior coverage ensures minimal paint consumption and vibrant results. Durable and resistant to peeling for long-lasting beauty. Ideal for modern residential and commercial spaces.",
+    description:
+      "A premium 100% acrylic interior paint with excellent washability. It offers a smooth, rich finish for elegant walls. Superior coverage ensures minimal paint consumption and vibrant results. Durable and resistant to peeling for long-lasting beauty. Ideal for modern residential and commercial spaces.",
     image: "/assets/5c.png",
     bgColor: "bg-blue-300",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "INSTA 100% acrylic interior emulsion provides luxurious finish with excellent durability and washability.",
+      mainDescription:
+        "INSTA 100% acrylic interior emulsion provides luxurious finish with excellent durability and washability.",
       finish: "Smooth & Matt",
       coverage: "100-120 sq.ft./liter per coat",
       application: "All interior plastered walls and ceilings",
-      cleaning: "Clean surface thoroughly removing all dust, dirt and loose particles. Repair any cracks or imperfections.",
+      cleaning:
+        "Clean surface thoroughly removing all dust, dirt and loose particles. Repair any cracks or imperfections.",
       putty: "Apply acrylic wall putty if needed, sand smooth when dry",
       primer: "Apply suitable interior primer and allow to dry for 4-6 hours",
-      topcoat: "Apply 2 coats of INSTA emulsion with brush or roller, allowing 4 hours drying time between coats",
+      topcoat:
+        "Apply 2 coats of INSTA emulsion with brush or roller, allowing 4 hours drying time between coats",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["100% Acrylic", "Washable", "Stain Resistant", "Low Odor", "Excellent Coverage"]
-    }
+      features: [
+        "100% Acrylic",
+        "Washable",
+        "Stain Resistant",
+        "Low Odor",
+        "Excellent Coverage",
+      ],
+    },
   },
   {
     id: 11,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "SMART",
     subtitle: "Acrylic Interior Emulsion",
-    description: "Elevate your interior spaces with SMART acrylic emulsion by Orchid Paints. This premium interior paint delivers rich, vibrant colors with exceptional coverage and a smooth, elegant finish. The advanced formula resists stains and is easy to clean, making it ideal for busy households and commercial spaces. Experience reduced odor during application and faster drying time for minimal disruption to your daily routine.",
+    description:
+      "Elevate your interior spaces with SMART acrylic emulsion by Orchid Paints. This premium interior paint delivers rich, vibrant colors with exceptional coverage and a smooth, elegant finish. The advanced formula resists stains and is easy to clean, making it ideal for busy households and commercial spaces. Experience reduced odor during application and faster drying time for minimal disruption to your daily routine.",
     image: "/assets/6c.png",
     bgColor: "bg-purple-300",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "SMART acrylic interior emulsion combines beauty with practical performance for modern living spaces.",
+      mainDescription:
+        "SMART acrylic interior emulsion combines beauty with practical performance for modern living spaces.",
       finish: "Silky Smooth & Matt",
       coverage: "110-130 sq.ft./liter per coat",
-      application: "Interior walls and ceilings in residential and commercial spaces",
-      cleaning: "Surface must be clean, dry and free from dust, grease and loose particles",
+      application:
+        "Interior walls and ceilings in residential and commercial spaces",
+      cleaning:
+        "Surface must be clean, dry and free from dust, grease and loose particles",
       putty: "Apply acrylic wall putty if needed, sand smooth when dry",
       primer: "Apply suitable interior primer and allow to dry for 4-6 hours",
-      topcoat: "Apply 2 coats of SMART emulsion with brush or roller, allowing 3-4 hours drying time between coats",
+      topcoat:
+        "Apply 2 coats of SMART emulsion with brush or roller, allowing 3-4 hours drying time between coats",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Stain Resistant", "Easy to Clean", "Low VOC", "Fast Drying", "Excellent Coverage"]
-    }
+      features: [
+        "Stain Resistant",
+        "Easy to Clean",
+        "Low VOC",
+        "Fast Drying",
+        "Excellent Coverage",
+      ],
+    },
   },
   {
     id: 12,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "SPLASH",
     subtitle: "Acrylic Water Based Primer Exterior",
-    description: "SPLASH exterior primer from Planet Paints creates the perfect foundation for your outdoor painting projects. This specialized water-based formula ensures superior adhesion on various exterior surfaces, promoting longer-lasting paint finishes. Its moisture-resistant properties help protect against weather damage while preventing common issues like peeling and cracking.",
+    description:
+      "SPLASH exterior primer from Planet Paints creates the perfect foundation for your outdoor painting projects. This specialized water-based formula ensures superior adhesion on various exterior surfaces, promoting longer-lasting paint finishes. Its moisture-resistant properties help protect against weather damage while preventing common issues like peeling and cracking.",
     image: "/assets/10c.png",
     bgColor: "bg-pink-300",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "Splash Acrylic water based primer wall coating suitable for applications on interior and exterior as an undercoat to interior and exterior Emulsion",
-      directions: "Surface preparation for interior and exterior use: Ensure thorough cleaning of the surface with wire brushing followed by High-pressure water jet cleaning. All structural cracks must be filled with suitable cement based plaster. In case of fungus affected area apply a coat of planet paints fungicidal wall wash solution and leave for 6-8 hours apply suitable Primer recommended for interior and exterior applications allow priming coat to hard dry for min 6-8 hrs followed by planet paints finishing coat",
+      mainDescription:
+        "Splash Acrylic water based primer wall coating suitable for applications on interior and exterior as an undercoat to interior and exterior Emulsion",
+      directions:
+        "Surface preparation for interior and exterior use: Ensure thorough cleaning of the surface with wire brushing followed by High-pressure water jet cleaning. All structural cracks must be filled with suitable cement based plaster. In case of fungus affected area apply a coat of planet paints fungicidal wall wash solution and leave for 6-8 hours apply suitable Primer recommended for interior and exterior applications allow priming coat to hard dry for min 6-8 hrs followed by planet paints finishing coat",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Easy Application", "Excellent Coverage", "Alkali Resistance", "Seals Dry Porous Surface"]
-    }
+      features: [
+        "Easy Application",
+        "Excellent Coverage",
+        "Alkali Resistance",
+        "Seals Dry Porous Surface",
+      ],
+    },
   },
   {
     id: 13,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "STROKE",
     subtitle: "Exterior Emulsion",
-    description: "STROKE exterior emulsion by Planet Paints delivers exceptional protection for all outdoor surfaces. This professional-grade formula creates a durable shield against harsh weather conditions, UV radiation, and pollution. Its advanced technology ensures excellent color retention and resistance to fading over time. Experience easy application with superior coverage that saves time and reduces material consumption.",
+    description:
+      "STROKE exterior emulsion by Planet Paints delivers exceptional protection for all outdoor surfaces. This professional-grade formula creates a durable shield against harsh weather conditions, UV radiation, and pollution. Its advanced technology ensures excellent color retention and resistance to fading over time. Experience easy application with superior coverage that saves time and reduces material consumption.",
     image: "/assets/8c.png",
     bgColor: "bg-orange-300",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "Stroke exterior Acrylic emulsion is economical water dilutable coating designed for application on exterior walls. It provides excellent performance in dry or moderate humid climate condition.The shades do not fade over an extended time & surface repainting is minimized ensuring that the exterior walls retain original beauty for years.",
+      mainDescription:
+        "Stroke exterior Acrylic emulsion is economical water dilutable coating designed for application on exterior walls. It provides excellent performance in dry or moderate humid climate condition.The shades do not fade over an extended time & surface repainting is minimized ensuring that the exterior walls retain original beauty for years.",
       finish: "Smooth & Matt",
       coverage: "100-120 sq.ft./coat",
-      application: "All kind of Exterior plaster, concrete and masonry surfaces",
-      cleaning: "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
-      putty: "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
-      primer: "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
-      topcoat: "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
+      application:
+        "All kind of Exterior plaster, concrete and masonry surfaces",
+      cleaning:
+        "Sand the surface with emery Paper 180 to remove loose Particles, paint, dust/grease, Cracked or flaked paints. Wipe clean",
+      putty:
+        "Smoothen the surface by filling dents with thin coats of Acrylic Wall Putty. Allow drying for 4-5 hours. Send with Emery Paper 180 and Wipe clean",
+      primer:
+        "Apply a coat of wall Primer. Allow drying for 6-8 hours. Another coat of wall Primer. Sand with Emery Paper 320 or 400. Wipe Clean.",
+      topcoat:
+        "Thin 1 liter of Paints with 400-500 ml of water and with Brush followed by rolling with a sponge or a felt roller. Apply 2-3 coats of with an interval of 3-4 hours between successive coats. For Deep shades apply an addition coat of Emulsion.",
       packaging: "1ltr, 4 ltr, 10 ltr, 20 ltr",
-      features: ["Algae Resistant", "Weather Resistant", "Anti Fading", "Protection from Dirt & Dust", "Tough & Durable Film"]
-    }
+      features: [
+        "Algae Resistant",
+        "Weather Resistant",
+        "Anti Fading",
+        "Protection from Dirt & Dust",
+        "Tough & Durable Film",
+      ],
+    },
   },
   {
     id: 14,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "Block Joining Mortar",
     subtitle: "Premium Construction Material",
-    description: "A premium construction material for joining blocks with superior bonding strength. Specially formulated for masonry work, it provides excellent workability and durability. The high-performance mortar ensures strong adhesion between blocks, reducing cracks and improving structural integrity. Ideal for both interior and exterior construction projects.",
+    description:
+      "A premium construction material for joining blocks with superior bonding strength. Specially formulated for masonry work, it provides excellent workability and durability. The high-performance mortar ensures strong adhesion between blocks, reducing cracks and improving structural integrity. Ideal for both interior and exterior construction projects.",
     image: "/assets/11c.png",
     bgColor: "bg-gray-400",
     textColor: "text-black",
     isConstructionMaterial: true,
     detailedInstructions: {
-      mainDescription: "High-quality mortar specially formulated for joining concrete blocks and bricks in construction projects.",
-      mixing: "Mix with clean water in recommended proportions (typically 3-4 parts powder to 1 part water by volume). Mix thoroughly to achieve uniform consistency without lumps.",
-      application: "Apply evenly on block surfaces using trowel. Join blocks immediately, ensuring proper alignment. Remove excess mortar before it sets.",
-      curing: "Keep the joined blocks moist for at least 24 hours for optimal strength development.",
-      coverage: "Approximately 1 kg per 10-12 standard blocks depending on joint thickness",
+      mainDescription:
+        "High-quality mortar specially formulated for joining concrete blocks and bricks in construction projects.",
+      mixing:
+        "Mix with clean water in recommended proportions (typically 3-4 parts powder to 1 part water by volume). Mix thoroughly to achieve uniform consistency without lumps.",
+      application:
+        "Apply evenly on block surfaces using trowel. Join blocks immediately, ensuring proper alignment. Remove excess mortar before it sets.",
+      curing:
+        "Keep the joined blocks moist for at least 24 hours for optimal strength development.",
+      coverage:
+        "Approximately 1 kg per 10-12 standard blocks depending on joint thickness",
       packaging: "25 kg bags",
-      features: ["High Bond Strength", "Excellent Workability", "Reduced Shrinkage", "Water Retentive", "Crack Resistant"]
-    }
+      features: [
+        "High Bond Strength",
+        "Excellent Workability",
+        "Reduced Shrinkage",
+        "Water Retentive",
+        "Crack Resistant",
+      ],
+    },
   },
   {
     id: 15,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "Wall Plaster",
     subtitle: "Professional Grade Wall Finish",
-    description: "A professional-grade plaster for creating smooth, durable wall surfaces. This ready-mix plaster provides excellent workability and adhesion to various substrates. It offers superior crack resistance and produces a uniform finish that's ideal for both interior and exterior applications. The formulation ensures minimal shrinkage and quick drying time for efficient project completion.",
+    description:
+      "A professional-grade plaster for creating smooth, durable wall surfaces. This ready-mix plaster provides excellent workability and adhesion to various substrates. It offers superior crack resistance and produces a uniform finish that's ideal for both interior and exterior applications. The formulation ensures minimal shrinkage and quick drying time for efficient project completion.",
     image: "/assets/19c.png",
     bgColor: "bg-emerald-200",
     textColor: "text-black",
     isConstructionMaterial: true,
     detailedInstructions: {
-      mainDescription: "Premium quality wall plaster for creating smooth, durable surfaces on interior and exterior walls.",
-      surfacePreparation: "Ensure the surface is clean, free from dust, grease and loose particles. Dampen the surface before application for better adhesion.",
-      mixing: "Mix with clean water in recommended proportions (typically 25-30% water by weight). Mix thoroughly to achieve lump-free consistency.",
-      application: "Apply in uniform thickness (typically 6-12mm) using steel trowel. For thicker applications, apply in multiple layers with proper curing between layers.",
-      curing: "Keep the plaster moist for at least 3 days by sprinkling water periodically.",
+      mainDescription:
+        "Premium quality wall plaster for creating smooth, durable surfaces on interior and exterior walls.",
+      surfacePreparation:
+        "Ensure the surface is clean, free from dust, grease and loose particles. Dampen the surface before application for better adhesion.",
+      mixing:
+        "Mix with clean water in recommended proportions (typically 25-30% water by weight). Mix thoroughly to achieve lump-free consistency.",
+      application:
+        "Apply in uniform thickness (typically 6-12mm) using steel trowel. For thicker applications, apply in multiple layers with proper curing between layers.",
+      curing:
+        "Keep the plaster moist for at least 3 days by sprinkling water periodically.",
       coverage: "Approximately 10-12 sq.ft. per kg at 10mm thickness",
       packaging: "25 kg bags",
-      features: ["Excellent Workability", "Low Shrinkage", "Crack Resistant", "Good Adhesion", "Smooth Finish"]
-    }
+      features: [
+        "Excellent Workability",
+        "Low Shrinkage",
+        "Crack Resistant",
+        "Good Adhesion",
+        "Smooth Finish",
+      ],
+    },
   },
   {
     id: 16,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "Tile Adhesive",
     subtitle: "Strong Bonding Solution",
-    description: "A high-performance tile adhesive that provides superior bonding strength for ceramic, porcelain, and natural stone tiles. This polymer-modified adhesive offers excellent workability and extended open time for precise tile placement. It's suitable for both floor and wall tile installations, providing durable results with reduced risk of tile slippage or debonding.",
+    description:
+      "A high-performance tile adhesive that provides superior bonding strength for ceramic, porcelain, and natural stone tiles. This polymer-modified adhesive offers excellent workability and extended open time for precise tile placement. It's suitable for both floor and wall tile installations, providing durable results with reduced risk of tile slippage or debonding.",
     image: "/assets/20c.png",
     bgColor: "bg-indigo-300",
     textColor: "text-black",
     isConstructionMaterial: true,
     detailedInstructions: {
-      mainDescription: "Premium polymer-modified tile adhesive for strong, durable tile installations.",
-      surfacePreparation: "Ensure the substrate is clean, dry, and free from dust, grease, and loose particles. Uneven surfaces should be leveled first.",
-      mixing: "Mix with clean water in recommended proportions (typically 5-6 liters per 20kg bag). Mix thoroughly to achieve smooth, lump-free consistency. Let stand for 5-10 minutes, then remix before use.",
-      application: "Apply adhesive using notched trowel (6mm x 6mm notch for most tiles). Press tiles firmly into place with twisting motion. Maintain consistent joint spacing.",
+      mainDescription:
+        "Premium polymer-modified tile adhesive for strong, durable tile installations.",
+      surfacePreparation:
+        "Ensure the substrate is clean, dry, and free from dust, grease, and loose particles. Uneven surfaces should be leveled first.",
+      mixing:
+        "Mix with clean water in recommended proportions (typically 5-6 liters per 20kg bag). Mix thoroughly to achieve smooth, lump-free consistency. Let stand for 5-10 minutes, then remix before use.",
+      application:
+        "Apply adhesive using notched trowel (6mm x 6mm notch for most tiles). Press tiles firmly into place with twisting motion. Maintain consistent joint spacing.",
       curing: "Allow 24 hours before grouting. Avoid heavy loads for 48 hours.",
       coverage: "Approximately 3-4 sq.m. per 20kg bag for 6mm trowel",
       packaging: "20 kg bags",
-      features: ["High Bond Strength", "Extended Open Time", "Non-Slip Formula", "Suitable for Most Tiles", "Water Resistant"]
-    }
+      features: [
+        "High Bond Strength",
+        "Extended Open Time",
+        "Non-Slip Formula",
+        "Suitable for Most Tiles",
+        "Water Resistant",
+      ],
+    },
   },
   {
     id: 17,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "Planet Paints WALL PUTTY",
-    subtitle: "100% Waterproof Super White | Water Resistant | No Curing Required",
-    description: "A high-performance, 100% waterproof putty for smooth, durable surfaces. Its polymer-based formula ensures superior adhesion, preventing cracks and shrinkage. Anti-fungal and water-resistant properties protect against moisture damage. Provides a super white, glossy finish for enhanced paint longevity. No curing required, ensuring hassle-free application.",
+    subtitle:
+      "100% Waterproof Super White | Water Resistant | No Curing Required",
+    description:
+      "A high-performance, 100% waterproof putty for smooth, durable surfaces. Its polymer-based formula ensures superior adhesion, preventing cracks and shrinkage. Anti-fungal and water-resistant properties protect against moisture damage. Provides a super white, glossy finish for enhanced paint longevity. No curing required, ensuring hassle-free application.",
     image: "/assets/6.png",
     bgColor: "bg-stone-400",
     textColor: "text-black",
     detailedInstructions: {
-      warning: "Although this 'Planet wall putty' containing White cement & German chemicals is quite safe, yet avoid its inhalation & entry in to eyes, even than it's better to rinse your eyes with plenty fresh water.",
+      warning:
+        "Although this 'Planet wall putty' containing White cement & German chemicals is quite safe, yet avoid its inhalation & entry in to eyes, even than it's better to rinse your eyes with plenty fresh water.",
       precautions: [
         "Avoid moisture and keep it a dry place.",
         "Use only plastic tub or bucket don't prepare it in a metal utensils.",
         "Keep it beyond children's access.",
-        "Before applying 'Planet wall putty' make the wall clean with the help of emery paper or putty blade."
+        "Before applying 'Planet wall putty' make the wall clean with the help of emery paper or putty blade.",
       ],
       application: [
         "Before applying the wall - apply sufficient water on it.",
         "Make a paste by slowly mixing 'Planet wall putty' with 35 to 45 % clean water in a plastic tub.",
         "With this prepared putty paste the help of putty blade on the moistened wall.",
         "Slowly rub the wall clean with a soft piece of cloth, after the first coat of putty gets dried up, allow the wall to get dry for at least 3 to 4 hours, then apply a second coat of putty on the wall.",
-        "The total thickness of the second coat of the putty must not be more than 1.5 mm. when the final coat of putty starts getting dry, rub a wet sponge on it softly to remove the marks caused by the putty blade, let the surface get dry for sometime. Now you can apply any kind of paint or Luxury Emulsion your choice on the wall already prepared with the 'Planet wall putty'"
+        "The total thickness of the second coat of the putty must not be more than 1.5 mm. when the final coat of putty starts getting dry, rub a wet sponge on it softly to remove the marks caused by the putty blade, let the surface get dry for sometime. Now you can apply any kind of paint or Luxury Emulsion your choice on the wall already prepared with the 'Planet wall putty'",
       ],
       packaging: "5 kg, 10 kg, 20 kg",
-      features: ["100% Waterproof", "Super White Finish", "No Curing Required", "Anti-Fungal", "Crack Resistant"]
-    }
+      features: [
+        "100% Waterproof",
+        "Super White Finish",
+        "No Curing Required",
+        "Anti-Fungal",
+        "Crack Resistant",
+      ],
+    },
   },
   {
     id: 18,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "ACRYLIC WALL TEXTURE",
     subtitle: "Premium Water-Resistant Wall Finish for Interior & Exterior",
-    description: "A premium water-resistant textured coating for interior and exterior walls. Its acrylic-based formula ensures excellent adhesion, flexibility, and durability. Protects against moisture, cracks, and environmental damage. Anti-fungal and anti-algae properties keep walls fresh and clean. Enhance your space with a rich, decorative finish.",
+    description:
+      "A premium water-resistant textured coating for interior and exterior walls. Its acrylic-based formula ensures excellent adhesion, flexibility, and durability. Protects against moisture, cracks, and environmental damage. Anti-fungal and anti-algae properties keep walls fresh and clean. Enhance your space with a rich, decorative finish.",
     image: "/assets/13.png",
     bgColor: "bg-amber-200",
     textColor: "text-black",
     detailedInstructions: {
       finish: "FINISH IS MADE WITH HIGH QUALITY MARBLE POWDER",
-      description: "Silicon sand and quartz in a rich acrylic-binding medium. This paint gives a very unique and different feel making the walls stand out. This material has excellent binding to the surface and has the ability to hide small cracks.",
-      surfacePreparation: "Surface must be clean, dry and free from dust, grease and loose particles. Repair any cracks or imperfections.",
+      description:
+        "Silicon sand and quartz in a rich acrylic-binding medium. This paint gives a very unique and different feel making the walls stand out. This material has excellent binding to the surface and has the ability to hide small cracks.",
+      surfacePreparation:
+        "Surface must be clean, dry and free from dust, grease and loose particles. Repair any cracks or imperfections.",
       application: [
         "Apply with trowel or texture roller depending on desired effect",
         "Work in small sections for consistent texture",
         "Can be tinted with universal colorants for custom colors",
-        "For exterior use, apply during moderate weather conditions"
+        "For exterior use, apply during moderate weather conditions",
       ],
       dryingTime: "Touch dry in 2-4 hours, recoat after 6-8 hours",
       coverage: "Approximately 40-60 sq.ft. per gallon depending on texture",
       packaging: "1 gallon, 5 gallon",
-      features: ["Water Resistant", "Hides Imperfections", "Decorative Finish", "Durable", "UV Resistant (exterior)"]
-    }
+      features: [
+        "Water Resistant",
+        "Hides Imperfections",
+        "Decorative Finish",
+        "Durable",
+        "UV Resistant (exterior)",
+      ],
+    },
   },
   {
     id: 19,
-    brand:"PlanetPaints",
+    brand: "PlanetPaints",
     title: "Orchid Paints WALL PUTTY",
     subtitle: "Superior Finish for Stronger Walls",
-    description: "A high-performance putty for a smooth, durable base. Enhances paint adhesion and longevity by filling cracks and leveling surfaces. Prevents moisture absorption for stronger walls. Ideal for interior and exterior applications. Ensures a flawless finish for residential and commercial spaces.",
+    description:
+      "A high-performance putty for a smooth, durable base. Enhances paint adhesion and longevity by filling cracks and leveling surfaces. Prevents moisture absorption for stronger walls. Ideal for interior and exterior applications. Ensures a flawless finish for residential and commercial spaces.",
     image: "/assets/15.png",
     bgColor: "bg-gray-300",
     textColor: "text-black",
     detailedInstructions: {
-      mainDescription: "Orchid Paints wall putty creates perfect smooth surface for paint application, enhancing paint durability and finish.",
-      surfacePreparation: "Clean the surface thoroughly removing all dust, dirt and loose particles. Dampen the surface before application.",
-      mixing: "Mix with clean water (approximately 30-35% by weight) to achieve smooth, lump-free consistency. Let stand for 5 minutes, then remix before application.",
+      mainDescription:
+        "Orchid Paints wall putty creates perfect smooth surface for paint application, enhancing paint durability and finish.",
+      surfacePreparation:
+        "Clean the surface thoroughly removing all dust, dirt and loose particles. Dampen the surface before application.",
+      mixing:
+        "Mix with clean water (approximately 30-35% by weight) to achieve smooth, lump-free consistency. Let stand for 5 minutes, then remix before application.",
       application: [
         "Apply thin, even coats (1-1.5mm) using stainless steel trowel",
         "Allow first coat to dry for 4-6 hours before applying second coat if needed",
-        "Sand lightly with fine sandpaper (180-220 grit) after final coat is completely dry"
+        "Sand lightly with fine sandpaper (180-220 grit) after final coat is completely dry",
       ],
       dryingTime: "Dries in 4-6 hours depending on weather conditions",
       coverage: "Approximately 12-15 sq.ft. per kg for two coats",
       packaging: "5 kg, 10 kg, 20 kg",
-      features: ["Smooth Finish", "Excellent Adhesion", "Reduces Paint Consumption", "Water Resistant", "Crack Resistant"]
-    }
-  }
+      features: [
+        "Smooth Finish",
+        "Excellent Adhesion",
+        "Reduces Paint Consumption",
+        "Water Resistant",
+        "Crack Resistant",
+      ],
+    },
+  },
 ];
-export default function HeroParallax({ id }: { id: string | null }) {
+export default function HeroParallax({ id }: { id?: string | null }) {
   const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
 
@@ -612,7 +810,7 @@ export default function HeroParallax({ id }: { id: string | null }) {
   };
 
   // Function to render detailed instructions based on product
-  const renderDetailedInstructions = (section:Product) => {
+  const renderDetailedInstructions = (section: Product) => {
     if (!section.detailedInstructions) return null;
 
     const defaultFeatures = [
@@ -1026,10 +1224,23 @@ export default function HeroParallax({ id }: { id: string | null }) {
                   parsedId ? "pb-2 border-b-2 border-gray-300 inline-block" : ""
                 }`}
               >
-                {section.title}
+                {section.id === 20 ? "SAICRETE AAC Blocks" : section.title}
               </h1>
+              {/* Add company name for id=20 */}
+              {section.id === 20 && (
+                <div className="mb-2">
+                  <p className="text-black-700font-medium text-3xl">
+                    Sai IGES Power Pvt.Ltd
+                  </p>
+                  <p className="text-black-600 font-medium text-sm  text-xl">
+                    Proud To Be Carbon Negative
+                  </p>
+                </div>
+              )}
               <p className="text-lg sm:text-xl md:text-2xl mt-2 mb-2 opacity-90">
-                {section.subtitle}
+                {section.id === 20
+                  ? "Eco-Friendly Fly Ash Based Premium Aerated Autoclaved Concrete Blocks"
+                  : section.subtitle}
               </p>
 
               {/* Colored accent bar */}
@@ -1039,6 +1250,47 @@ export default function HeroParallax({ id }: { id: string | null }) {
                 <div className="h-1 w-20 bg-green-500 rounded-full mx-1"></div>
               </div>
             </motion.div>
+
+            {/* Add ISI certification badge for id=20 */}
+            {section.id === 20 && (
+              <div className="mb-6 flex justify-center">
+                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 flex items-center gap-3 max-w-md">
+                  <div className="bg-yellow-100 p-2 rounded-full">
+                    <svg
+                      className="w-6 h-6 text-yellow-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-yellow-800">
+                      ISI Certified Product
+                    </p>
+                    <p className="text-sm text-yellow-700">
+                      ISI Number: CM/L-7500254716
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Add production capacity for id=20 */}
+            {section.id === 20 && (
+              <div className="mb-6 text-center">
+                <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium text-sm">
+                  Production Capacity: 750 Meter Cube AAC Per Day
+                </div>
+              </div>
+            )}
 
             {/* Main content area */}
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mt-8">
@@ -1058,15 +1310,23 @@ export default function HeroParallax({ id }: { id: string | null }) {
               >
                 <div className="relative w-full">
                   {/* Brand badge */}
-                  {section.brand && (
+                  {section.id === 20 ? (
                     <div className="absolute -top-4 -right-4 z-10 bg-white rounded-full shadow-lg p-2">
-                      <div className="bg-red-500 text-white text-xs font-bold rounded-full px-3 py-1">
-                        {section.brand}
+                      <div className="bg-green-500 text-white text-xs font-bold rounded-full px-3 py-1">
+                        SAICRETE
                       </div>
                     </div>
+                  ) : (
+                    section.brand && (
+                      <div className="absolute -top-4 -right-4 z-10 bg-white rounded-full shadow-lg p-2">
+                        <div className="bg-red-500 text-white text-xs font-bold rounded-full px-3 py-1">
+                          {section.brand}
+                        </div>
+                      </div>
+                    )
                   )}
 
-                  {section.isConstructionMaterial ? (
+                  {section.id === 20 || section.isConstructionMaterial ? (
                     <motion.div
                       className="relative w-full bg-gradient-to-b from-gray-50 to-gray-100 p-8 rounded-xl shadow-lg"
                       whileHover={{ scale: 1.02 }}
@@ -1077,7 +1337,9 @@ export default function HeroParallax({ id }: { id: string | null }) {
                       }}
                     >
                       <Image
-                        src={section.image}
+                        src={
+                          section.id === 20 ? "/assets/110.webp" : section.image
+                        }
                         alt={section.title}
                         width={500}
                         height={600}
@@ -1085,16 +1347,52 @@ export default function HeroParallax({ id }: { id: string | null }) {
                         priority
                       />
 
+                      {/* AAC Factory image for id=20 */}
+                      {section.id === 20 && (
+                        <motion.div
+                          className="mt-6 bg-yellow-50 p-3 rounded-lg"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ delay: 0.5 }}
+                        >
+                          <h3 className="text-center text-sm font-medium text-gray-700 mb-2">
+                            State-of-the-art Manufacturing Facility
+                          </h3>
+                          <Image
+                            src="/assets/footer.jpg"
+                            alt="AAC Blocks Production Facility"
+                            width={600}
+                            height={300}
+                            className="w-full h-auto object-cover rounded-lg"
+                          />
+                          <p className="text-center text-xs text-green-700 mt-2 font-medium">
+                            We have pioneered the fully green energy based
+                            manufacturing facility in the country
+                          </p>
+                        </motion.div>
+                      )}
+
                       {/* Product packaging info overlay */}
-                      {section.detailedInstructions?.packaging && (
-                        <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-                          <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-md text-sm font-medium text-gray-800">
+                      {section.id === 20 ? (
+                        <div className="absolute bottom-2 left-0 right-0 flex justify-center">
+                          <div className="bg-white/90 backdrop-blur-sm px-8 py-1 rounded-full shadow-md text-sm font-medium text-gray-800">
                             <span>
-                              Available in:{" "}
-                              {section.detailedInstructions.packaging}
+                              Available Sizes: 625 x 240 mm and 600 x 200 mm
+                              (various thicknesses)
                             </span>
                           </div>
                         </div>
+                      ) : (
+                        section.detailedInstructions?.packaging && (
+                          <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+                            <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-md text-sm font-medium text-gray-800">
+                              <span>
+                                Available in:{" "}
+                                {section.detailedInstructions.packaging}
+                              </span>
+                            </div>
+                          </div>
+                        )
                       )}
                     </motion.div>
                   ) : (
@@ -1134,62 +1432,120 @@ export default function HeroParallax({ id }: { id: string | null }) {
                 {/* Quick info badges - only show on smaller screens and when ID is present */}
                 {parsedId && (
                   <div className="lg:hidden grid grid-cols-2 gap-3 mt-6">
-                    {section.detailedInstructions?.finish && (
-                      <div className="bg-white/90 p-3 rounded-lg shadow-sm flex items-center gap-2">
-                        <div className="bg-blue-100 p-1.5 rounded-full">
-                          <svg
-                            className="w-4 h-4 text-blue-600"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                            <path d="M2 12l10 5 10-5"></path>
-                          </svg>
+                    {section.id === 20 ? (
+                      <>
+                        <div className="bg-white/90 p-3 rounded-lg shadow-sm flex items-center gap-2">
+                          <div className="bg-green-100 p-1.5 rounded-full">
+                            <svg
+                              className="w-4 h-4 text-green-600"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                              <path d="M22 12h-4"></path>
+                              <path d="M6 12H2"></path>
+                              <path d="M12 6V2"></path>
+                              <path d="M12 22v-4"></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <span className="text-xs text-gray-500">
+                              Material
+                            </span>
+                            <p className="text-sm font-medium">Fly Ash Based</p>
+                          </div>
                         </div>
-                        <div>
-                          <span className="text-xs text-gray-500">Finish</span>
-                          <p className="text-sm font-medium">
-                            {section.detailedInstructions.finish}
-                          </p>
+                        <div className="bg-white/90 p-3 rounded-lg shadow-sm flex items-center gap-2">
+                          <div className="bg-blue-100 p-1.5 rounded-full">
+                            <svg
+                              className="w-4 h-4 text-blue-600"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                              <path d="M2 17l10 5 10-5"></path>
+                              <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <span className="text-xs text-gray-500">
+                              Certification
+                            </span>
+                            <p className="text-sm font-medium">ISI Certified</p>
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      </>
+                    ) : (
+                      <>
+                        {section.detailedInstructions?.finish && (
+                          <div className="bg-white/90 p-3 rounded-lg shadow-sm flex items-center gap-2">
+                            <div className="bg-blue-100 p-1.5 rounded-full">
+                              <svg
+                                className="w-4 h-4 text-blue-600"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              >
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <span className="text-xs text-gray-500">
+                                Finish
+                              </span>
+                              <p className="text-sm font-medium">
+                                {section.detailedInstructions.finish}
+                              </p>
+                            </div>
+                          </div>
+                        )}
 
-                    {section.detailedInstructions?.coverage && (
-                      <div className="bg-white/90 p-3 rounded-lg shadow-sm flex items-center gap-2">
-                        <div className="bg-green-100 p-1.5 rounded-full">
-                          <svg
-                            className="w-4 h-4 text-green-600"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                          </svg>
-                        </div>
-                        <div>
-                          <span className="text-xs text-gray-500">
-                            Coverage
-                          </span>
-                          \
-                          <p className="text-sm font-medium">
-                            {section.detailedInstructions.coverage}
-                          </p>
-                        </div>
-                      </div>
+                        {section.detailedInstructions?.coverage && (
+                          <div className="bg-white/90 p-3 rounded-lg shadow-sm flex items-center gap-2">
+                            <div className="bg-green-100 p-1.5 rounded-full">
+                              <svg
+                                className="w-4 h-4 text-green-600"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              >
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                              </svg>
+                            </div>
+                            <div>
+                              <span className="text-xs text-gray-500">
+                                Coverage
+                              </span>
+                              <p className="text-sm font-medium">
+                                {section.detailedInstructions.coverage}
+                              </p>
+                            </div>
+                          </div>
+                        )}
+                      </>
                     )}
                   </div>
                 )}
@@ -1199,7 +1555,292 @@ export default function HeroParallax({ id }: { id: string | null }) {
               <div className={`flex-1 ${parsedId ? "" : "md:w-1/2"}`}>
                 {parsedId ? (
                   // Detailed product view
-                  renderDetailedInstructions(section as Product)
+                  section.id === 20 ? (
+                    <motion.div
+                      className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 100,
+                        damping: 20,
+                        delay: 0.3,
+                      }}
+                    >
+                      <div className="mb-6">
+                        <h3 className="text-xl font-bold mb-3 text-gray-800 border-b pb-2">
+                          Product Description
+                        </h3>
+                        <p className="text-gray-700 leading-relaxed">
+                          SAICRETE AAC Blocks are premium quality Eco-Friendly
+                          Fly Ash Based Aerated Autoclaved Concrete Blocks
+                          manufactured in our state-of-the-art green energy
+                          based facility. These lightweight yet strong blocks
+                          offer superior insulation, fire resistance, and
+                          durability while being environmentally friendly.
+                        </p>
+                      </div>
+
+                      {/* Key features list */}
+                      <div className="mb-6">
+                        <h3 className="text-xl font-bold mb-3 text-gray-800 border-b pb-2">
+                          Key Features
+                        </h3>
+                        <ul className="space-y-3">
+                          <motion.li
+                            className="flex items-start"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.4 }}
+                          >
+                            <svg
+                              className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M5 13l4 4L19 7"
+                              ></path>
+                            </svg>
+                            <span>
+                              <strong>Lightweight:</strong> Significantly
+                              lighter than traditional clay bricks, improving
+                              construction efficiency and reducing structural
+                              load
+                            </span>
+                          </motion.li>
+                          <motion.li
+                            className="flex items-start"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.5 }}
+                          >
+                            <svg
+                              className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M5 13l4 4L19 7"
+                              ></path>
+                            </svg>
+                            <span>
+                              <strong>Excellent Thermal Insulation:</strong>{" "}
+                              Provides better temperature control, reducing
+                              heating and cooling costs
+                            </span>
+                          </motion.li>
+                          <motion.li
+                            className="flex items-start"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.6 }}
+                          >
+                            <svg
+                              className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M5 13l4 4L19 7"
+                              ></path>
+                            </svg>
+                            <span>
+                              <strong>Sound Insulation:</strong> Superior
+                              acoustic properties for peaceful interiors
+                            </span>
+                          </motion.li>
+                          <motion.li
+                            className="flex items-start"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.7 }}
+                          >
+                            <svg
+                              className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M5 13l4 4L19 7"
+                              ></path>
+                            </svg>
+                            <span>
+                              <strong>Fire Resistant:</strong> Non-combustible
+                              material enhancing building safety
+                            </span>
+                          </motion.li>
+                          <motion.li
+                            className="flex items-start"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.8 }}
+                          >
+                            <svg
+                              className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M5 13l4 4L19 7"
+                              ></path>
+                            </svg>
+                            <span>
+                              <strong>Eco-Friendly:</strong> Made from fly ash,
+                              a recycled material, reducing environmental impact
+                            </span>
+                          </motion.li>
+                          <motion.li
+                            className="flex items-start"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.9 }}
+                          >
+                            <svg
+                              className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M5 13l4 4L19 7"
+                              ></path>
+                            </svg>
+                            <span>
+                              <strong>Precise Dimensions:</strong> Ensures
+                              easier installation and reduces mortar consumption
+                            </span>
+                          </motion.li>
+                        </ul>
+                      </div>
+
+                      {/* Applications section */}
+                      <div className="mb-6">
+                        <h3 className="text-xl font-bold mb-3 text-gray-800 border-b pb-2">
+                          Applications
+                        </h3>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                          {[
+                            "Residential Buildings",
+                            "Commercial Complexes",
+                            "Industrial Structures",
+                            "Internal Walls",
+                            "External Walls",
+                            "Partition Walls",
+                          ].map((app, idx) => (
+                            <motion.div
+                              key={idx}
+                              className="bg-green-50 rounded-lg p-3 text-center text-sm"
+                              initial={{ opacity: 0, scale: 0.9 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ delay: 0.5 + idx * 0.1 }}
+                              whileHover={{ scale: 1.05 }}
+                            >
+                              {app}
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Installation Guidelines */}
+                      <div className="mb-6">
+                        <h3 className="text-xl font-bold mb-3 text-gray-800 border-b pb-2">
+                          Installation Guidelines
+                        </h3>
+                        <ol className="list-decimal pl-5 space-y-2">
+                          <li>
+                            Clean the surface and ensure it is level before
+                            starting installation.
+                          </li>
+                          <li>
+                            Use thin-bed mortar specifically designed for AAC
+                            blocks.
+                          </li>
+                          <li>
+                            Apply mortar with a notched trowel to ensure even
+                            distribution.
+                          </li>
+                          <li>
+                            Place blocks in a staggered pattern for maximum
+                            stability.
+                          </li>
+                          <li>
+                            Use appropriate cutting tools to achieve precise
+                            dimensions when needed.
+                          </li>
+                          <li>
+                            Allow appropriate curing time before applying
+                            finishes.
+                          </li>
+                        </ol>
+                      </div>
+
+                      {/* Certifications & Recognition */}
+                      <div className="mb-6">
+                        <h3 className="text-xl font-bold mb-3 text-gray-800 border-b pb-2">
+                          Certifications & Recognition
+                        </h3>
+                        <div className="flex flex-wrap gap-3 mt-4">
+                          <div className="flex items-center bg-gray-100 rounded-full px-3 py-1.5">
+                            <span className="text-sm">ISI Certified</span>
+                          </div>
+                          <div className="flex items-center bg-gray-100 rounded-full px-3 py-1.5">
+                            <span className="text-sm">Make in India</span>
+                          </div>
+                          <div className="flex items-center bg-gray-100 rounded-full px-3 py-1.5">
+                            <span className="text-sm">Carbon Negative</span>
+                          </div>
+                          <div className="flex items-center bg-gray-100 rounded-full px-3 py-1.5">
+                            <span className="text-sm">
+                              Green Energy Manufactured
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Contact for more information */}
+                      <div className="mt-6 bg-green-50 p-4 rounded-lg">
+                        <h3 className="font-semibold text-green-800">
+                          For more information:
+                        </h3>
+                        <p className="text-green-700">
+                          Contact Sai IGES Power Pvt. Ltd. for pricing, bulk
+                          orders, and technical support.
+                        </p>
+                      </div>
+                    </motion.div>
+                  ) : (
+                    renderDetailedInstructions(section as Product)
+                  )
                 ) : (
                   // Product card view
                   <motion.div
@@ -1226,31 +1867,33 @@ export default function HeroParallax({ id }: { id: string | null }) {
                         Key Features
                       </h3>
                       <ul className="space-y-2">
-                        {section.detailedInstructions?.features?.map((feature, idx) => (
-                          <motion.li
-                            key={idx}
-                            className="flex items-start"
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.4 + idx * 0.1 }}
-                          >
-                            <svg
-                              className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg"
+                        {section.detailedInstructions?.features?.map(
+                          (feature, idx) => (
+                            <motion.li
+                              key={idx}
+                              className="flex items-start"
+                              initial={{ opacity: 0, x: -10 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ delay: 0.4 + idx * 0.1 }}
                             >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M5 13l4 4L19 7"
-                              ></path>
-                            </svg>
-                            <span>{feature}</span>
-                          </motion.li>
-                        ))}
+                              <svg
+                                className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2"
+                                  d="M5 13l4 4L19 7"
+                                ></path>
+                              </svg>
+                              <span>{feature}</span>
+                            </motion.li>
+                          )
+                        )}
                       </ul>
                     </div>
 
@@ -1296,3 +1939,4 @@ export default function HeroParallax({ id }: { id: string | null }) {
     </div>
   );
 }
+
