@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -667,10 +668,78 @@ const sections = [
       ],
     },
   },
+  {
+    id: 21,
+    title: "CORPORATE GIFTING SOLOUTIONS",
+    subtitle: "Premium Selection of Executive & Personalized Gifts",
+    description:
+      "A premium collection of corporate gifts ideal for clients, partners, and employees. This exclusive assortment includes leather organizers, thermos flasks, backpacks, picture frames, chess boards, and elegant storage boxes. Each item combines utility with sophistication, reflecting appreciation and professionalism.",
+    image: "/assets/corporate-gifts.jpg",
+    bgColor: "bg-amber-200",
+    textColor: "text-black",
+    detailedInstructions: {
+      finish: "LUXURY FINISH WITH FINE MATERIALS LIKE LEATHER, WOOD, AND METAL",
+      description:
+        "Crafted with premium leather, polished wood, and brushed metal, each item in the gift set is designed for functionality and aesthetic appeal. Suitable for office, home, or travel use.",
+      surfacePreparation:
+        "Not applicable — each product comes ready for use or gifting.",
+      application: [
+        "Ideal for corporate events, client appreciation, or festive gifting",
+        "Can be customized with logos or names upon request",
+        "Packaged in elegant gift boxes for presentation",
+        "Includes multipurpose items useful in daily executive settings",
+      ],
+      dryingTime: "Not applicable",
+      coverage: "Varies by item (e.g., bag, flask, box)",
+      packaging: "Individual or combo gift sets in premium boxes",
+      features: [
+        "Customizable",
+        "Premium Quality",
+        "Wide Variety",
+        "Elegant Presentation",
+        "Ideal for Branding & Gifting",
+      ],
+    },
+  },
+  {
+    id: 22,
+    title: "BOPP TAPE SUPPLIER",
+    subtitle: "High-Quality BOPP Adhesive Tapes for Packaging & Industrial Use",
+    description:
+      "We supply premium-grade BOPP (Biaxially Oriented Polypropylene) self-adhesive tapes for diverse packaging needs. Our collection includes clear, colored, and printed tapes with excellent adhesion, tensile strength, and durability. Ideal for shipping, branding, and industrial packaging applications.",
+    image: "/assets/self-adhesive.jpeg",
+    bgColor: "bg-blue-100",
+    textColor: "text-black",
+    detailedInstructions: {
+      finish: "AVAILABLE IN GLOSSY, MATT & PRINTED FINISHES",
+      description:
+        "Made from strong BOPP film with water-based or hot-melt acrylic adhesive, our tapes provide superior sealing strength and long-lasting performance. Options available for fragile labeling, branding, warning messages, and general use.",
+      surfacePreparation:
+        "Ensure the surface is dry, clean, and free from dust or oil for optimal adhesion.",
+      application: [
+        "Used in carton sealing, logistics, warehousing, e-commerce, and industrial packaging",
+        "Printed options available for branding and safety messaging",
+        "Compatible with manual dispensers and automatic taping machines",
+        "Performs well across a range of temperatures and environments",
+      ],
+      dryingTime: "Immediate adhesion on application",
+      coverage:
+        "Available in various lengths (e.g., 65m, 100m, 200m) and widths (e.g., 2”, 3”)",
+      packaging: "Rolls packed in boxes, available in bulk quantities",
+      features: [
+        "Strong Adhesion",
+        "Tear Resistant",
+        "Printable Surface",
+        "Eco-Friendly Options Available",
+        "Wide Color & Size Range",
+      ],
+    },
+  },
 ];
-export default function HeroParallax({ id }: { id?: string | null }) {
+
+const HeroParallax: React.FC<{ id?: string }> = ({ id }) => {
   const router = useRouter();
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     setIsVisible(true);
@@ -1294,7 +1363,6 @@ export default function HeroParallax({ id }: { id?: string | null }) {
 
             {/* Main content area */}
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mt-8">
-              {/* Product Image - Left aligned */}
               <motion.div
                 className={`flex-shrink-0 ${
                   parsedId ? "w-full lg:w-2/5" : "w-full md:w-1/2"
@@ -1938,5 +2006,5 @@ export default function HeroParallax({ id }: { id?: string | null }) {
       ))}
     </div>
   );
-}
-
+};
+export default HeroParallax;

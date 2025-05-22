@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone } from "lucide-react";
@@ -126,6 +127,19 @@ const product = [
     image: "/assets/9b.png",
     bgColor: "bg-red-100", // Light red background
   },
+  {
+    id:21,
+    title: "CORPORATE GIFTING SOLOUTIONS",
+    image: "/assets/corporate-gifts.jpg",
+    bgColor: "bg-red-100", // Light red background
+  },
+  {
+    id:22,
+    title: "BOPP TAPE SUPPLIER",
+    image: "/assets/self-adhesive.jpeg",
+    bgColor: "bg-red-100", // Light red background
+  },
+  
 ];
 
 export default function Product({id}: { id: string | null }) {

@@ -260,7 +260,7 @@ const App: React.FC = () => {
                 desc: "We also work with government-approved paints and color schemes for residential and commercial projects."
               },
               {
-                src: "https://th.bing.com/th/id/R.94f457fb92c3113c5672cb56c081566b?rik=%2fMANvf5vGS%2b5Yg&riu=http%3a%2f%2facdn.architizer.com%2fthumbnails-PRODUCTION%2fdd%2f71%2fdd71cbf438275eefe580bd92df869be3.jpg&ehk=OcK0iCEPMakQUQbpewZp0dbwA1VuURoX8FDnFDpKlf8%3d&risl=&pid=ImgRaw&r=0",
+                src: "https://www.sskcivilcontractors.in/img/service/commercial-building-construction.webp",
                 title: "Commercial Building Contractors",
                 desc: "Our commercial building services cover large-scale painting and maintenance projects for offices, apartments, and more."
               },

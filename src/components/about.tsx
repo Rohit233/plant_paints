@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {  Award, TrendingUp, Users } from "lucide-react"
